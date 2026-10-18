@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-10-18T20:47:34Z",
+  "updatedAt": "2026-10-18T23:15:56Z",
   "places": [
     {
       "id": "nyc",
@@ -356,7 +356,7 @@
       ],
       "cameras": [
         {"id": "yt--przbqudf7o", "name": {"en": "Warsaw skyline & National Stadium", "fr": "Varsovie, panorama et Stade national"}, "area": "Warszawa", "category": "warsaw", "type": "skyline", "lat": 52.24, "lon": 21.045, "channel": {"name": "Warsaw Livestream", "url": "https://www.youtube.com/channel/UCPQH7Qez-TIVJv5cmquVFyg"}, "match": ["Warszawa na żywo"], "videoId": "_prZbQudF7o"},
-        {"id": "yt-inv1syrenu8", "name": {"en": "Trzęsacz - klif"}, "area": "Trzęsacz", "category": "baltic", "type": "beach", "lat": 54.078, "lon": 15.009, "channel": {"name": "rewalkamera_pl", "url": "https://www.youtube.com/channel/UCM_D7m1EjQTTnd12TSYJebg"}, "match": ["Trzęsacz"], "videoId": "INV1syreNU8"},
+        {"id": "yt-inv1syrenu8", "name": {"en": "Trzęsacz - klif"}, "area": "Trzęsacz", "category": "baltic", "type": "beach", "lat": 54.078, "lon": 15.009, "channel": {"name": "rewalkamera_pl", "url": "https://www.youtube.com/channel/UCM_D7m1EjQTTnd12TSYJebg"}, "match": ["Trzęsacz"], "videoId": "tgOb_mxpvDA"},
         {"id": "yt-n3ijgeh6zmk", "name": {"en": "Niechorze - las nadmorski"}, "area": "Niechorze", "category": "baltic", "type": "nature", "lat": 54.095, "lon": 15.064, "channel": {"name": "rewalkamera_pl", "url": "https://www.youtube.com/channel/UCM_D7m1EjQTTnd12TSYJebg"}, "match": ["Nadmorski las"], "videoId": "N3Ijgeh6zmk"},
         {"id": "yt-mud2ycccjcm", "name": {"en": "Niechorze - Bałtyk"}, "area": "Niechorze", "category": "baltic", "type": "beach", "lat": 54.096, "lon": 15.066, "channel": {"name": "rewalkamera_pl", "url": "https://www.youtube.com/channel/UCM_D7m1EjQTTnd12TSYJebg"}, "match": ["Niechorze Live"], "videoId": "muD2ycCCjCM"},
         {"id": "yt-pu6bfhzbrgk", "name": {"en": "Rewal - przystań rybacka"}, "area": "Rewal", "category": "baltic", "type": "port", "lat": 54.084, "lon": 15.031, "channel": {"name": "rewalkamera_pl", "url": "https://www.youtube.com/channel/UCM_D7m1EjQTTnd12TSYJebg"}, "match": ["Przystań Rybacka"], "videoId": "PU6BFHZBRGk"},
