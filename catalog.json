@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-10-18T21:00:00Z",
+  "updatedAt": "2026-10-18T20:47:34Z",
   "places": [
     {
       "id": "nyc",
@@ -28,7 +28,7 @@
         {"id": "bwc-new-york-harbor", "name": {"en": "New York Harbor 4K", "fr": "Port de New York 4K"}, "area": "Brooklyn", "category": "skyline", "type": "port", "lat": 40.6935, "lon": -73.999, "channel": {"name": "Brooklyn Waterfront Cams", "url": "https://www.youtube.com/@BrooklynWaterfrontCams"}, "match": ["New York Harbor"], "videoId": "obqnslJKrxc"},
         {"id": "romnyc-forest-hills", "name": {"en": "Skyline from Forest Hills", "fr": "Skyline depuis Forest Hills"}, "area": "Queens", "category": "skyline", "type": "skyline", "lat": 40.7185, "lon": -73.8448, "channel": {"name": "RomNYC", "url": "https://www.youtube.com/@RomNYC"}, "match": ["Forest Hills"], "videoId": "NzKkbwMHLK0"},
         {"id": "earthcam-brooklyn-bridge", "name": {"en": "Brooklyn Bridge", "fr": "Pont de Brooklyn"}, "area": "East River", "category": "bridges", "type": "landmark", "lat": 40.7061, "lon": -73.9969, "channel": {"name": "EarthCam", "url": "https://www.youtube.com/@earthcam"}, "match": ["Brooklyn Bridge Cam"], "videoId": "tErYxn2UM5Y"},
-        {"id": "bwc-brooklyn-manhattan-bridges", "name": {"en": "Brooklyn & Manhattan Bridges", "fr": "Ponts de Brooklyn et de Manhattan"}, "area": "Brooklyn Navy Yard", "category": "bridges", "type": "landmark", "lat": 40.704, "lon": -73.977, "channel": {"name": "Brooklyn Waterfront Cams", "url": "https://www.youtube.com/@BrooklynWaterfrontCams"}, "match": ["Manhattan Bridge"], "videoId": "VO5PSTr3_L0"},
+        {"id": "bwc-brooklyn-manhattan-bridges", "name": {"en": "Brooklyn & Manhattan Bridges", "fr": "Ponts de Brooklyn et de Manhattan"}, "area": "Brooklyn Navy Yard", "category": "bridges", "type": "landmark", "lat": 40.704, "lon": -73.977, "channel": {"name": "Brooklyn Waterfront Cams", "url": "https://www.youtube.com/@BrooklynWaterfrontCams"}, "match": ["Manhattan Bridge"], "videoId": "Dqky5lCJAkw"},
         {"id": "gwb-george-washington-bridge", "name": {"en": "George Washington Bridge", "fr": "Pont George-Washington"}, "area": "Washington Heights", "category": "bridges", "type": "traffic", "lat": 40.8517, "lon": -73.9527, "channel": {"name": "GWB Live Traffic Cam", "url": "https://www.youtube.com/@gwblivetrafficcam"}, "match": ["George Washington Bridge", "GWB"], "videoId": "5BlEY0fpCRs"},
         {"id": "nycferry-east-34th", "name": {"en": "East River at 34th Street", "fr": "East River, 34e Rue"}, "area": "Midtown East", "category": "bridges", "type": "port", "lat": 40.7445, "lon": -73.9718, "channel": {"name": "NYC Ferry", "url": "https://www.youtube.com/@nycferry"}, "match": ["East 34th"], "videoId": "HqA7SiDDqc0"},
         {"id": "earthcam-coney-island", "name": {"en": "Coney Island", "fr": "Coney Island"}, "area": "Brooklyn", "category": "neighborhoods", "type": "beach", "lat": 40.5749, "lon": -73.9859, "channel": {"name": "EarthCam", "url": "https://www.youtube.com/@earthcam"}, "match": ["Coney Island"], "videoId": "H67j7H-7QD0"},
