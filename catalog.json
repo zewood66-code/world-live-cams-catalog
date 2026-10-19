@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-10-18T23:15:56Z",
+  "updatedAt": "2026-10-19T01:22:05Z",
   "places": [
     {
       "id": "nyc",
@@ -32,7 +32,7 @@
         {"id": "gwb-george-washington-bridge", "name": {"en": "George Washington Bridge", "fr": "Pont George-Washington"}, "area": "Washington Heights", "category": "bridges", "type": "traffic", "lat": 40.8517, "lon": -73.9527, "channel": {"name": "GWB Live Traffic Cam", "url": "https://www.youtube.com/@gwblivetrafficcam"}, "match": ["George Washington Bridge", "GWB"], "videoId": "5BlEY0fpCRs"},
         {"id": "nycferry-east-34th", "name": {"en": "East River at 34th Street", "fr": "East River, 34e Rue"}, "area": "Midtown East", "category": "bridges", "type": "port", "lat": 40.7445, "lon": -73.9718, "channel": {"name": "NYC Ferry", "url": "https://www.youtube.com/@nycferry"}, "match": ["East 34th"], "videoId": "HqA7SiDDqc0"},
         {"id": "earthcam-coney-island", "name": {"en": "Coney Island", "fr": "Coney Island"}, "area": "Brooklyn", "category": "neighborhoods", "type": "beach", "lat": 40.5749, "lon": -73.9859, "channel": {"name": "EarthCam", "url": "https://www.youtube.com/@earthcam"}, "match": ["Coney Island"], "videoId": "H67j7H-7QD0"},
-        {"id": "ppl-prospect-park", "name": {"en": "Prospect Park", "fr": "Prospect Park"}, "area": "Park Slope, Brooklyn", "category": "neighborhoods", "type": "nature", "lat": 40.6602, "lon": -73.969, "channel": {"name": "Prospect Park Live", "url": "https://www.youtube.com/@ProspectParkLive"}, "match": ["Prospect Park"], "videoId": "a_tZCwRoiig"},
+        {"id": "ppl-prospect-park", "name": {"en": "Prospect Park", "fr": "Prospect Park"}, "area": "Park Slope, Brooklyn", "category": "neighborhoods", "type": "nature", "lat": 40.6602, "lon": -73.969, "channel": {"name": "Prospect Park Live", "url": "https://www.youtube.com/@ProspectParkLive"}, "match": ["Prospect Park"], "videoId": "MkmVMuHcvdU"},
         {"id": "tripwebcam-upper-east-side", "name": {"en": "Upper East Side", "fr": "Upper East Side"}, "area": "Manhattan", "category": "neighborhoods", "type": "city", "lat": 40.7736, "lon": -73.9566, "channel": {"name": "Tripwebcam", "url": "https://www.youtube.com/@tripwebcam"}, "match": ["Upper East Side"], "videoId": "R2jNOtYEwdI"},
         {"id": "fr24-laguardia", "name": {"en": "LaGuardia Airport", "fr": "Aéroport LaGuardia"}, "area": "Queens", "category": "neighborhoods", "type": "airport", "lat": 40.7769, "lon": -73.874, "channel": {"name": "Flightradar24", "url": "https://www.youtube.com/@Flightradar24DotCom"}, "match": ["LGA Airport", "LaGuardia"], "videoId": "T_QsY01tIK0"},
         {"id": "ec-esb37", "name": {"en": "Empire State Building"}, "area": "Midtown", "category": "landmarks", "type": "landmark", "lat": 40.74844, "lon": -73.98566, "source": "earthcam", "page": "https://www.earthcam.com/usa/newyork/empirestatebuilding/?cam=esb37", "cam": "esb37", "channel": {"name": "EarthCam", "url": "https://www.earthcam.com/usa/newyork/empirestatebuilding/?cam=esb37"}, "thumbnail": "https://static.earthcam.com/camshots/512x288/0d96ac439ad892a8056c528fbb7608e9.jpg"},
@@ -355,7 +355,7 @@
         {"id": "towns", "name": {"en": "Other towns", "fr": "Autres villes"}}
       ],
       "cameras": [
-        {"id": "yt--przbqudf7o", "name": {"en": "Warsaw skyline & National Stadium", "fr": "Varsovie, panorama et Stade national"}, "area": "Warszawa", "category": "warsaw", "type": "skyline", "lat": 52.24, "lon": 21.045, "channel": {"name": "Warsaw Livestream", "url": "https://www.youtube.com/channel/UCPQH7Qez-TIVJv5cmquVFyg"}, "match": ["Warszawa na żywo"], "videoId": "_prZbQudF7o"},
+        {"id": "yt--przbqudf7o", "name": {"en": "Warsaw skyline & National Stadium", "fr": "Varsovie, panorama et Stade national"}, "area": "Warszawa", "category": "warsaw", "type": "skyline", "lat": 52.24, "lon": 21.045, "channel": {"name": "Warsaw Livestream", "url": "https://www.youtube.com/channel/UCPQH7Qez-TIVJv5cmquVFyg"}, "match": ["Warszawa na żywo"], "videoId": "oNC2CovcDpQ"},
         {"id": "yt-inv1syrenu8", "name": {"en": "Trzęsacz - klif"}, "area": "Trzęsacz", "category": "baltic", "type": "beach", "lat": 54.078, "lon": 15.009, "channel": {"name": "rewalkamera_pl", "url": "https://www.youtube.com/channel/UCM_D7m1EjQTTnd12TSYJebg"}, "match": ["Trzęsacz"], "videoId": "tgOb_mxpvDA"},
         {"id": "yt-n3ijgeh6zmk", "name": {"en": "Niechorze - las nadmorski"}, "area": "Niechorze", "category": "baltic", "type": "nature", "lat": 54.095, "lon": 15.064, "channel": {"name": "rewalkamera_pl", "url": "https://www.youtube.com/channel/UCM_D7m1EjQTTnd12TSYJebg"}, "match": ["Nadmorski las"], "videoId": "N3Ijgeh6zmk"},
         {"id": "yt-mud2ycccjcm", "name": {"en": "Niechorze - Bałtyk"}, "area": "Niechorze", "category": "baltic", "type": "beach", "lat": 54.096, "lon": 15.066, "channel": {"name": "rewalkamera_pl", "url": "https://www.youtube.com/channel/UCM_D7m1EjQTTnd12TSYJebg"}, "match": ["Niechorze Live"], "videoId": "muD2ycCCjCM"},
