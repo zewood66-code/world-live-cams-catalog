@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-10-20T11:42:14Z",
+  "updatedAt": "2026-10-20T15:09:35Z",
   "places": [
     {
       "id": "nyc",
@@ -846,6 +846,52 @@
         {"id": "wc-wladyslawowo-plaza", "name": {"en": "Władysławowo - widok na plażę - NOWOŚĆ"}, "area": "Władysławowo", "category": "baltic", "type": "city", "lat": 54.80212, "lon": 18.40214, "source": "webcamerapl", "page": "https://wladyslawowo-plaza.webcamera.pl/", "channel": {"name": "WebCamera.pl", "url": "https://wladyslawowo-plaza.webcamera.pl/"}, "thumbnail": "https://static.webcamera.pl/camsbig/wladyslawowo-plaza.jpg"},
         {"id": "wc-sofra-karpacz-kamera", "name": {"en": "Instytut Zdrowia Sofra - widok na Śnieżkę w Karpaczu NOWOŚĆ"}, "area": "Instytut Zdrowia Sofra", "category": "sudetes", "type": "city", "lat": 50.77366, "lon": 15.76425, "source": "webcamerapl", "page": "https://sofra-karpacz-kamera.webcamera.pl/", "channel": {"name": "WebCamera.pl", "url": "https://sofra-karpacz-kamera.webcamera.pl/"}, "thumbnail": "https://static.webcamera.pl/camsbig/sofra-karpacz-kamera.jpg"},
         {"id": "wc-pszczoly-pasieka-lyson-kamera", "name": {"en": "Pszczoły - Pasieka Łysoń NOWOŚĆ"}, "area": "Pszczoły", "category": "beskids", "type": "city", "lat": 49.88286, "lon": 19.53668, "source": "webcamerapl", "page": "https://pszczoly-pasieka-lyson-kamera.webcamera.pl/", "channel": {"name": "WebCamera.pl", "url": "https://pszczoly-pasieka-lyson-kamera.webcamera.pl/"}, "thumbnail": "https://static.webcamera.pl/camsbig/pszczoly-pasieka-lyson-kamera.jpg"}
+      ]
+    },
+    {
+      "id": "airports",
+      "name": {"en": "World airports", "fr": "Aéroports du monde"},
+      "country": "",
+      "icon": "✈️",
+      "clockLabel": "UTC",
+      "lat": 30.0,
+      "lon": -30.0,
+      "timezone": "UTC",
+      "zoom": 3,
+      "global": true,
+      "categories": [
+        {"id": "atc", "name": {"en": "With control tower audio", "fr": "Avec la tour de contrôle"}},
+        {"id": "americas", "name": {"en": "Americas", "fr": "Amériques"}},
+        {"id": "europe", "name": {"en": "Europe"}},
+        {"id": "asia", "name": {"en": "Asia", "fr": "Asie"}}
+      ],
+      "cameras": [
+        {"id": "air-lga", "name": {"en": "LaGuardia (LGA)"}, "area": "New York", "category": "atc", "type": "airport", "lat": 40.7769, "lon": -73.874, "channel": {"name": "Flightradar24", "url": "https://www.youtube.com/@Flightradar24DotCom"}, "match": ["LGA Airport"], "videoId": "T_QsY01tIK0", "timezone": "America/New_York", "clockLabel": "LGA"},
+        {"id": "air-lax-24", "name": {"en": "Los Angeles LAX, 24L/24R"}, "area": "Los Angeles", "category": "atc", "type": "airport", "lat": 33.95, "lon": -118.401, "channel": {"name": "AirlineVideosLive+", "url": "https://www.youtube.com/channel/UCox5yCEEjk4iYbhLgyj90EQ"}, "match": ["24L & 24R"], "videoId": "n4I0d44oBEs", "timezone": "America/Los_Angeles", "clockLabel": "LAX"},
+        {"id": "air-lax-25", "name": {"en": "Los Angeles LAX, 25L/25R"}, "area": "Los Angeles", "category": "atc", "type": "airport", "lat": 33.937, "lon": -118.41, "channel": {"name": "AirlineVideosLive+", "url": "https://www.youtube.com/channel/UCox5yCEEjk4iYbhLgyj90EQ"}, "match": ["25L & 25R"], "videoId": "KzsNnyN8D_Q", "timezone": "America/Los_Angeles", "clockLabel": "LAX"},
+        {"id": "air-atl", "name": {"en": "Atlanta (ATL)"}, "area": "Atlanta", "category": "atc", "type": "airport", "lat": 33.6407, "lon": -84.4277, "channel": {"name": "Southern Radar", "url": "https://www.youtube.com/channel/UCrI7ZJrxaUTeY8gM6ZtWLPQ"}, "match": ["Atlanta Airport"], "videoId": "V2t1EV0sZNc", "timezone": "America/New_York", "clockLabel": "ATL"},
+        {"id": "air-mia", "name": {"en": "Miami (MIA)"}, "area": "Miami", "category": "atc", "type": "airport", "lat": 25.7959, "lon": -80.287, "channel": {"name": "PTZtv", "url": "https://www.youtube.com/channel/UCG8-xn6zUbEqmqlnsvrD33Q"}, "match": ["Miami Airport"], "videoId": "_GUsXnlVJmo", "timezone": "America/New_York", "clockLabel": "MIA"},
+        {"id": "air-las", "name": {"en": "Las Vegas (LAS)"}, "area": "Las Vegas", "category": "atc", "type": "airport", "lat": 36.084, "lon": -115.1537, "channel": {"name": "LAS Vegas Airport LIVE", "url": "https://www.youtube.com/channel/UCYDCnc3YBEqxfuhvQ4rxqSA"}, "match": ["LAS Vegas Airport LIVE Camera"], "videoId": "iIUCaiiMmNs", "timezone": "America/Los_Angeles", "clockLabel": "LAS"},
+        {"id": "air-msy", "name": {"en": "New Orleans (MSY)", "fr": "La Nouvelle-Orléans (MSY)"}, "area": "New Orleans", "category": "atc", "type": "airport", "lat": 29.9934, "lon": -90.258, "channel": {"name": "Flightradar24", "url": "https://www.youtube.com/@Flightradar24DotCom"}, "match": ["MSY Airport"], "videoId": "iZRbml7fnXI", "timezone": "America/Chicago", "clockLabel": "MSY"},
+        {"id": "air-mke", "name": {"en": "Milwaukee (MKE)"}, "area": "Milwaukee", "category": "atc", "type": "airport", "lat": 42.9472, "lon": -87.8966, "channel": {"name": "Flightradar24", "url": "https://www.youtube.com/@Flightradar24DotCom"}, "match": ["MKE Airport"], "videoId": "sJl7PsdHxWM", "timezone": "America/Chicago", "clockLabel": "MKE"},
+        {"id": "air-rno", "name": {"en": "Reno-Tahoe (RNO)"}, "area": "Reno", "category": "atc", "type": "airport", "lat": 39.4991, "lon": -119.7681, "channel": {"name": "Flightradar24", "url": "https://www.youtube.com/@Flightradar24DotCom"}, "match": ["RNO Airport"], "videoId": "fFl0qD108sk", "timezone": "America/Los_Angeles", "clockLabel": "RNO"},
+        {"id": "air-sxm", "name": {"en": "Sint Maarten, Maho Beach (SXM)", "fr": "Saint-Martin, Maho Beach (SXM)"}, "area": "Sint Maarten", "category": "atc", "type": "airport", "lat": 18.041, "lon": -63.1089, "channel": {"name": "Flightradar24", "url": "https://www.youtube.com/@Flightradar24DotCom"}, "match": ["SXM Airport"], "videoId": "2IQmpCXbOmM", "timezone": "America/Lower_Princes", "clockLabel": "SXM"},
+        {"id": "air-bos", "name": {"en": "Boston Logan (BOS)"}, "area": "Boston", "category": "americas", "type": "airport", "lat": 42.3656, "lon": -71.0096, "channel": {"name": "Boston Logan View EastieGuys", "url": "https://www.youtube.com/channel/UCjv7CEme1v-ShPG5aSImS0A"}, "match": ["Boston Logan Airport"], "videoId": "PkX6rJSS0uc", "timezone": "America/New_York", "clockLabel": "BOS"},
+        {"id": "air-mdw", "name": {"en": "Chicago Midway (MDW)"}, "area": "Chicago", "category": "americas", "type": "airport", "lat": 41.7868, "lon": -87.7522, "channel": {"name": "StreamTime Live", "url": "https://www.youtube.com/channel/UCrtIIVfi-5tMlVXdMDzOMUA"}, "match": ["Midway Airport"], "videoId": "67BCsiW-1Io", "timezone": "America/Chicago", "clockLabel": "MDW"},
+        {"id": "air-sea", "name": {"en": "Seattle-Tacoma (SEA)"}, "area": "Seattle", "category": "americas", "type": "airport", "lat": 47.4502, "lon": -122.3088, "channel": {"name": "Full Aviation 4K", "url": "https://www.youtube.com/channel/UCPxVtPukN6E7sGfsMlrqG2g"}, "match": ["Seattle-Tacoma"], "videoId": "qLwsWGHjsTo", "timezone": "America/Los_Angeles", "clockLabel": "SEA"},
+        {"id": "air-yul", "name": {"en": "Montréal-Trudeau (YUL)"}, "area": "Montréal", "category": "americas", "type": "airport", "lat": 45.468, "lon": -73.735, "channel": {"name": "Moore Equipment Ltd.", "url": "https://www.youtube.com/channel/UCmM8fJ5uDl8pqu8nnd8Ixlg"}, "match": ["Runway 24L"], "videoId": "Vvq37CnY0iY", "timezone": "America/Toronto", "clockLabel": "YUL"},
+        {"id": "air-gru", "name": {"en": "São Paulo-Guarulhos (GRU)"}, "area": "São Paulo", "category": "americas", "type": "airport", "lat": -23.4356, "lon": -46.4731, "channel": {"name": "SBGR LIVE", "url": "https://www.youtube.com/channel/UCNZCKDhAVtbh7sddChTxI7w"}, "match": ["Guarulhos"], "videoId": "AkrsWw5p_7E", "timezone": "America/Sao_Paulo", "clockLabel": "GRU"},
+        {"id": "air-sfj", "name": {"en": "Kangerlussuaq (SFJ)", "fr": "Kangerlussuaq, Groenland (SFJ)"}, "area": "Greenland", "category": "americas", "type": "airport", "lat": 67.0122, "lon": -50.7116, "channel": {"name": "Greenland Airports Live: West", "url": "https://www.youtube.com/channel/UCQzo9669uzsWC3I7UZYAA1Q"}, "match": ["Kangerlussuaq Airport"], "videoId": "xdfXJJImEDM", "timezone": "America/Nuuk", "clockLabel": "SFJ"},
+        {"id": "air-lhr", "name": {"en": "London Heathrow (LHR)", "fr": "Londres Heathrow (LHR)"}, "area": "London", "category": "europe", "type": "airport", "lat": 51.47, "lon": -0.4543, "channel": {"name": "BIG JET TV", "url": "https://www.youtube.com/channel/UCkQef3Fidr7tm3gNuXgGKPw"}, "match": ["Heathrow Airport LIVE"], "videoId": "uDBYuEV4zjI", "timezone": "Europe/London", "clockLabel": "LHR"},
+        {"id": "air-prg", "name": {"en": "Prague (PRG)"}, "area": "Prague", "category": "europe", "type": "airport", "lat": 50.1008, "lon": 14.26, "channel": {"name": "SlowTV", "url": "https://www.youtube.com/channel/UC3ewP9SczRIGGpDXDQvpPyQ"}, "match": ["Planespotting at Prague"], "videoId": "Deo_lcwn8lk", "timezone": "Europe/Prague", "clockLabel": "PRG"},
+        {"id": "air-lis", "name": {"en": "Lisbon (LIS)", "fr": "Lisbonne (LIS)"}, "area": "Lisbon", "category": "europe", "type": "airport", "lat": 38.7742, "lon": -9.1342, "channel": {"name": "AVIATION TV", "url": "https://www.youtube.com/channel/UC0R-K3crhMX9jzswbmfIORw"}, "match": ["Lisbon Airport Live Cam"], "videoId": "8BIOy3c5o6Q", "timezone": "Europe/Lisbon", "clockLabel": "LIS"},
+        {"id": "air-agp", "name": {"en": "Málaga (AGP)"}, "area": "Costa del Sol", "category": "europe", "type": "airport", "lat": 36.6749, "lon": -4.4991, "channel": {"name": "meteo365es", "url": "https://www.youtube.com/channel/UCKCw1qKElfcxE6A1KefdG5A"}, "match": ["Malaga Airport"], "videoId": "A6R81wOlQqs", "timezone": "Europe/Madrid", "clockLabel": "AGP"},
+        {"id": "air-fnc", "name": {"en": "Madeira (FNC)", "fr": "Madère (FNC)"}, "area": "Madeira", "category": "europe", "type": "airport", "lat": 32.6979, "lon": -16.7745, "channel": {"name": "Madeira-Web", "url": "https://www.youtube.com/channel/UCH_lKz2VXlfLPgYOE3biySg"}, "match": ["Madeira Airport"], "videoId": "8Drrabk3h6M", "timezone": "Atlantic/Madeira", "clockLabel": "FNC"},
+        {"id": "air-ace", "name": {"en": "Lanzarote (ACE)"}, "area": "Canary Islands", "category": "europe", "type": "airport", "lat": 28.9455, "lon": -13.6052, "channel": {"name": "Flightradar24", "url": "https://www.youtube.com/@Flightradar24DotCom"}, "match": ["ACE Lanzarote"], "videoId": "4nC8r5neaow", "timezone": "Atlantic/Canary", "clockLabel": "ACE"},
+        {"id": "air-hnd", "name": {"en": "Tokyo Haneda (HND)"}, "area": "Tokyo", "category": "asia", "type": "airport", "lat": 35.5494, "lon": 139.7798, "channel": {"name": "Nippon Television News Japan", "url": "https://www.youtube.com/channel/UCJD2Br_xC-3vY4nkJ9YPYDA"}, "match": ["Haneda"], "videoId": "3w4zEyFamuA", "timezone": "Asia/Tokyo", "clockLabel": "HND"},
+        {"id": "air-nrt", "name": {"en": "Tokyo Narita (NRT)"}, "area": "Tokyo", "category": "asia", "type": "airport", "lat": 35.772, "lon": 140.3929, "channel": {"name": "Asahi Shimbun LIVE", "url": "https://www.youtube.com/channel/UCaHr0a1x8zmQ1dxanCeuesA"}, "match": ["Narita"], "videoId": "OuCbntsMsWY", "timezone": "Asia/Tokyo", "clockLabel": "NRT"},
+        {"id": "air-itm", "name": {"en": "Osaka Itami (ITM)"}, "area": "Osaka", "category": "asia", "type": "airport", "lat": 34.7855, "lon": 135.4382, "channel": {"name": "ITM SKY CAM", "url": "https://www.youtube.com/channel/UCur21TajiRsI1Da1GLzv7Lg"}, "match": ["ITM SKY CAM"], "videoId": "fQ7boRogE5c", "timezone": "Asia/Tokyo", "clockLabel": "ITM"},
+        {"id": "air-hkg", "name": {"en": "Hong Kong (HKG)"}, "area": "Hong Kong", "category": "asia", "type": "airport", "lat": 22.308, "lon": 113.9185, "channel": {"name": "Hong Kong Airport Live Cam", "url": "https://www.youtube.com/channel/UCs3H75ak0L_iVLSmXwTORyQ"}, "match": ["Hong Kong Airport Live"], "videoId": "qfKcEUneaDY", "timezone": "Asia/Hong_Kong", "clockLabel": "HKG"}
       ]
     }
   ]
