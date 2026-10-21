@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-10-21T16:06:58Z",
+  "updatedAt": "2026-10-21T16:32:50Z",
   "places": [
     {
       "id": "nyc",
@@ -888,6 +888,124 @@
         {"id": "wc-wladyslawowo-plaza", "name": {"en": "Władysławowo - widok na plażę - NOWOŚĆ"}, "area": "Władysławowo", "category": "baltic", "type": "city", "lat": 54.80212, "lon": 18.40214, "source": "webcamerapl", "page": "https://wladyslawowo-plaza.webcamera.pl/", "channel": {"name": "WebCamera.pl", "url": "https://wladyslawowo-plaza.webcamera.pl/"}, "thumbnail": "https://static.webcamera.pl/camsbig/wladyslawowo-plaza.jpg"},
         {"id": "wc-sofra-karpacz-kamera", "name": {"en": "Instytut Zdrowia Sofra - widok na Śnieżkę w Karpaczu NOWOŚĆ"}, "area": "Instytut Zdrowia Sofra", "category": "sudetes", "type": "city", "lat": 50.77366, "lon": 15.76425, "source": "webcamerapl", "page": "https://sofra-karpacz-kamera.webcamera.pl/", "channel": {"name": "WebCamera.pl", "url": "https://sofra-karpacz-kamera.webcamera.pl/"}, "thumbnail": "https://static.webcamera.pl/camsbig/sofra-karpacz-kamera.jpg"},
         {"id": "wc-pszczoly-pasieka-lyson-kamera", "name": {"en": "Pszczoły - Pasieka Łysoń NOWOŚĆ"}, "area": "Pszczoły", "category": "beskids", "type": "city", "lat": 49.88286, "lon": 19.53668, "source": "webcamerapl", "page": "https://pszczoly-pasieka-lyson-kamera.webcamera.pl/", "channel": {"name": "WebCamera.pl", "url": "https://pszczoly-pasieka-lyson-kamera.webcamera.pl/"}, "thumbnail": "https://static.webcamera.pl/camsbig/pszczoly-pasieka-lyson-kamera.jpg"}
+      ]
+    },
+    {
+      "id": "norway",
+      "name": {"en": "Norway", "fr": "Norvège"},
+      "country": "no",
+      "clockLabel": "NO",
+      "lat": 59.9139,
+      "lon": 10.7522,
+      "timezone": "Europe/Oslo",
+      "zoom": 5,
+      "categories": [
+        {"id": "oslo", "name": {"en": "Oslo"}},
+        {"id": "fjords", "name": {"en": "Fjords & west coast", "fr": "Fjords et côte ouest"}},
+        {"id": "north", "name": {"en": "Northern Norway", "fr": "Nord de la Norvège"}},
+        {"id": "mountains", "name": {"en": "Mountains & ski resorts", "fr": "Montagne et stations de ski"}}
+      ],
+      "cameras": [
+        {"id": "norwaylive-oslo", "name": {"en": "Oslo (rotating views)", "fr": "Oslo (vues tournantes)"}, "area": "Oslo", "category": "oslo", "type": "city", "lat": 59.9075, "lon": 10.753, "channel": {"name": "Norway Live - Kanal3", "url": "https://www.youtube.com/channel/UCWGnrzAM1XZFK9EDxNWRsjg"}, "match": ["Oslo LIVE"], "videoId": "faKBmRq0lYg"},
+        {"id": "norwaylive-oslo-sentrum", "name": {"en": "Oslo city centre", "fr": "Oslo, centre-ville"}, "area": "Oslo", "category": "oslo", "type": "skyline", "lat": 59.925, "lon": 10.735, "channel": {"name": "Norway Live - Kanal 2", "url": "https://www.youtube.com/channel/UCI5s5kx5FtdgMFdMDDXU3DA"}, "match": ["Utsikt LIVE"], "videoId": "SY-Z3O9oYkU"},
+        {"id": "norwaylive-oslo-marka", "name": {"en": "Oslomarka forest", "fr": "Forêt d'Oslomarka"}, "area": "Oslo", "category": "oslo", "type": "nature", "lat": 60.02, "lon": 10.65, "channel": {"name": "Norway Live", "url": "https://www.youtube.com/channel/UCgAmmVZsZ4vfDH-vtWawaOg"}, "match": ["Marka LIVE"], "videoId": "1901VSSXcHY"},
+        {"id": "stavanger-tjuvholmen", "name": {"en": "Stavanger, Tjuvholmen"}, "area": "Stavanger", "category": "fjords", "type": "port", "lat": 58.985, "lon": 5.705, "channel": {"name": "Live Norway", "url": "https://www.youtube.com/channel/UCagckRRHeGkG7iwPl91hUpg"}, "match": ["Stavanger Tjuvholmen"], "videoId": "RA6Jm7sv_F4"},
+        {"id": "jorpeland", "name": {"en": "Jørpeland"}, "area": "Rogaland", "category": "fjords", "type": "port", "lat": 59.0167, "lon": 6.0447, "channel": {"name": "K. Grodeland", "url": "https://www.youtube.com/channel/UCXfD1p9RjGR3Sy9lcDHZUZA"}, "match": ["Jørpeland"], "videoId": "OHqNIOuH9c0"},
+        {"id": "flam-pier", "name": {"en": "Flåm harbour", "fr": "Port de Flåm"}, "area": "Aurlandsfjord", "category": "fjords", "type": "port", "lat": 60.8633, "lon": 7.1139, "channel": {"name": "Port of Flåm", "url": "https://www.youtube.com/channel/UCw5U6E2SJBn9YfEeJV2Hvcw"}, "match": ["Live Pier 6"], "videoId": "o6obskJPWdw"},
+        {"id": "nordfjordeid-port", "name": {"en": "Nordfjordeid harbour", "fr": "Port de Nordfjordeid"}, "area": "Nordfjord", "category": "fjords", "type": "port", "lat": 61.91, "lon": 5.99, "channel": {"name": "Live Norway", "url": "https://www.youtube.com/channel/UCagckRRHeGkG7iwPl91hUpg"}, "match": ["Port of Nordfjordeid"], "videoId": "0V59F4M3o88"},
+        {"id": "nordfjordhjort", "name": {"en": "Nordfjord valley", "fr": "Vallée du Nordfjord"}, "area": "Nordfjord", "category": "fjords", "type": "nature", "lat": 61.88, "lon": 6.05, "channel": {"name": "Live Norway", "url": "https://www.youtube.com/channel/UCagckRRHeGkG7iwPl91hUpg"}, "match": ["Nordfjordhjort"], "videoId": "0fTmFyQCxqc"},
+        {"id": "selje", "name": {"en": "Selje"}, "area": "Stad", "category": "fjords", "type": "port", "lat": 62.045, "lon": 5.35, "channel": {"name": "Live Norway", "url": "https://www.youtube.com/channel/UCagckRRHeGkG7iwPl91hUpg"}, "match": ["Selje"], "videoId": "jYThYA_ceN0"},
+        {"id": "maloy", "name": {"en": "Måløy"}, "area": "Stad", "category": "fjords", "type": "port", "lat": 61.935, "lon": 5.113, "channel": {"name": "Live Norway", "url": "https://www.youtube.com/channel/UCagckRRHeGkG7iwPl91hUpg"}, "match": ["Måløy"], "videoId": "_h_ICRmlXgg"},
+        {"id": "krakenes-fyr", "name": {"en": "Kråkenes lighthouse", "fr": "Phare de Kråkenes"}, "area": "Stad", "category": "fjords", "type": "landmark", "lat": 62.035, "lon": 5.0, "channel": {"name": "Live Norway", "url": "https://www.youtube.com/channel/UCagckRRHeGkG7iwPl91hUpg"}, "match": ["Kråkenes Fyr"], "videoId": "FwkM8B3ZiPQ"},
+        {"id": "hjorundfjorden", "name": {"en": "Hjørundfjord"}, "area": "Sunnmøre", "category": "fjords", "type": "nature", "lat": 62.2, "lon": 6.48, "channel": {"name": "Live Norway", "url": "https://www.youtube.com/channel/UCagckRRHeGkG7iwPl91hUpg"}, "match": ["Hjørundfjorden"], "videoId": "NKaFizWO6w0"},
+        {"id": "geirangerfjord", "name": {"en": "Geirangerfjord"}, "area": "Geiranger", "category": "fjords", "type": "nature", "lat": 62.105, "lon": 7.19, "channel": {"name": "Geirangerfjord World Heritage", "url": "https://www.youtube.com/channel/UCrXzTzJI3JITr9XJ7t2FhQw"}, "match": ["Live Geirangerfjord"], "videoId": "yslIWiEjRXw"},
+        {"id": "geiranger-hotel-union", "name": {"en": "Geiranger village", "fr": "Village de Geiranger"}, "area": "Geiranger", "category": "fjords", "type": "nature", "lat": 62.101, "lon": 7.204, "channel": {"name": "Hotel Union Geiranger", "url": "https://www.youtube.com/channel/UClqd_NklmF4AnW4MYiCeSEg"}, "match": ["Geiranger Live"], "videoId": "wAdTV6Uc5eA"},
+        {"id": "geiranger-cruise-port", "name": {"en": "Geiranger cruise port", "fr": "Geiranger, port de croisière"}, "area": "Geiranger", "category": "fjords", "type": "port", "lat": 62.1015, "lon": 7.2055, "channel": {"name": "Geirangerfjord cruise port", "url": "https://www.youtube.com/channel/UCbYNIUYxdzeQTKdb9GfJl3w"}, "match": ["cruise port, Geiranger"], "videoId": "yMSc-qqW3To"},
+        {"id": "hellesylt-port", "name": {"en": "Hellesylt cruise port", "fr": "Hellesylt, port de croisière"}, "area": "Hellesylt", "category": "fjords", "type": "port", "lat": 62.084, "lon": 6.87, "channel": {"name": "Geirangerfjord cruise port, Hellesylt", "url": "https://www.youtube.com/channel/UCD3fPz7PdO06e8k75nIwifQ"}, "match": ["Hellesylt"], "videoId": "S4aJlRY39fo"},
+        {"id": "hellesylt-sentrum", "name": {"en": "Hellesylt village", "fr": "Village de Hellesylt"}, "area": "Hellesylt", "category": "fjords", "type": "nature", "lat": 62.085, "lon": 6.871, "channel": {"name": "hellesylt.info", "url": "https://www.youtube.com/channel/UCACZoTB7vpbcuax-LNNRMcQ"}, "match": ["Hellesylt sentrum"], "videoId": "ndhYKVzCIs8"},
+        {"id": "molde", "name": {"en": "Molde"}, "area": "Romsdal", "category": "fjords", "type": "city", "lat": 62.737, "lon": 7.16, "channel": {"name": "Triangel Security AS", "url": "https://www.youtube.com/channel/UC5_UEwpA9D5p5TjbfI5Ys6w"}, "match": ["Molde Live"], "videoId": "m0dTtGEcPEg"},
+        {"id": "kristiansund-sentrum", "name": {"en": "Kristiansund"}, "area": "Nordmøre", "category": "fjords", "type": "city", "lat": 63.11, "lon": 7.73, "channel": {"name": "Streambird Pro", "url": "https://www.youtube.com/channel/UCuiHrLHm5n38Rzl_2y8mYOw"}, "match": ["Kristiansund sentrum"], "videoId": "OEHJwXVAAoY"},
+        {"id": "kristiansund-kongens-plass", "name": {"en": "Kristiansund, Kongens plass"}, "area": "Nordmøre", "category": "fjords", "type": "city", "lat": 63.1105, "lon": 7.728, "channel": {"name": "SpareBank 1 Nordmøre", "url": "https://www.youtube.com/channel/UCtZEp-JUvGtQbOG6PDKDuHQ"}, "match": ["Kongens Plass"], "videoId": "feY7GCnY8KU"},
+        {"id": "smola", "name": {"en": "Smøla"}, "area": "Nordmøre", "category": "fjords", "type": "port", "lat": 63.39, "lon": 8.02, "channel": {"name": "Live Norway", "url": "https://www.youtube.com/channel/UCagckRRHeGkG7iwPl91hUpg"}, "match": ["Smøla"], "videoId": "tz5u7zWL8Xo"},
+        {"id": "bodo-city", "name": {"en": "Bodø"}, "area": "Nordland", "category": "north", "type": "skyline", "lat": 67.28, "lon": 14.4, "channel": {"name": "NK-Nett", "url": "https://www.youtube.com/channel/UCAkZ1qNwXOYM5t5VxjvjKQQ"}, "match": ["Bodø City"], "videoId": "d12QYCsY8r4"},
+        {"id": "bodo-ronvik", "name": {"en": "Bodø marina", "fr": "Bodø, marina"}, "area": "Nordland", "category": "north", "type": "port", "lat": 67.29, "lon": 14.42, "channel": {"name": "Livestream RHM", "url": "https://www.youtube.com/channel/UCQ7ZsQlKXqajscmEow-CUjA"}, "match": ["Rønvik"], "videoId": "zWuon7LMi5o"},
+        {"id": "drag-havn", "name": {"en": "Drag harbour", "fr": "Port de Drag"}, "area": "Tysfjord", "category": "north", "type": "port", "lat": 68.05, "lon": 16.08, "channel": {"name": "Tysfjord ASVO", "url": "https://www.youtube.com/channel/UCu4e2k3YWQx4j63qmh-dweQ"}, "match": ["Drag Havn"], "videoId": "zwwBmLaNzOU"},
+        {"id": "narvik-havn", "name": {"en": "Narvik harbour", "fr": "Port de Narvik"}, "area": "Narvik", "category": "north", "type": "port", "lat": 68.43, "lon": 17.42, "channel": {"name": "Norway Live - Kanal 2", "url": "https://www.youtube.com/channel/UCI5s5kx5FtdgMFdMDDXU3DA"}, "match": ["Narvik havn"], "videoId": "v-sOAF0rcZQ"},
+        {"id": "harstad-havn", "name": {"en": "Harstad harbour", "fr": "Port de Harstad"}, "area": "Harstad", "category": "north", "type": "port", "lat": 68.8, "lon": 16.54, "channel": {"name": "Harstad kommune", "url": "https://www.youtube.com/channel/UCrFmupAMCsqRrb1LkXFVlqQ"}, "match": ["Harstad"], "videoId": "fGE4zmYnU30"},
+        {"id": "tromso-vervet", "name": {"en": "Tromsø"}, "area": "Tromsø", "category": "north", "type": "skyline", "lat": 69.645, "lon": 18.96, "channel": {"name": "Vervet Tromsø", "url": "https://www.youtube.com/channel/UC6HiVa8ET2pDdiDZqzmTPhw"}, "match": ["Utsikt Sør"], "videoId": "3y7_fkAzzps"},
+        {"id": "tromso-havn", "name": {"en": "Tromsø harbour", "fr": "Port de Tromsø"}, "area": "Tromsø", "category": "north", "type": "port", "lat": 69.65, "lon": 18.965, "channel": {"name": "Tromsø Havn KF - Livestream Sentrum", "url": "https://www.youtube.com/channel/UCqutoUlRwHgyVPzV1IRRhtQ"}, "match": ["Livestream Sentrum"], "videoId": "zEFbX2Yo0ks"},
+        {"id": "lyngen-northern-lights", "name": {"en": "Lyngen northern lights", "fr": "Lyngen, aurores boréales"}, "area": "Lyngen", "category": "north", "type": "nature", "lat": 69.79, "lon": 20.65, "channel": {"name": "Lyngen North", "url": "https://www.youtube.com/channel/UCou65n58xvgd6BBkrbluObQ"}, "match": ["northern lights camera"], "videoId": "SwXtDFC9Bro"},
+        {"id": "skarsvag", "name": {"en": "Skarsvåg, North Cape", "fr": "Skarsvåg, cap Nord"}, "area": "Nordkapp", "category": "north", "type": "port", "lat": 71.11, "lon": 25.82, "channel": {"name": "Skarsvåg bygdelag live cam", "url": "https://www.youtube.com/channel/UC6bRB9N7EyMijsauPttAvfg"}, "match": ["Skarsvåg Live"], "videoId": "iMqrD-HBDGo"},
+        {"id": "mehamn", "name": {"en": "Mehamn"}, "area": "Finnmark", "category": "north", "type": "port", "lat": 71.035, "lon": 27.85, "channel": {"name": "Mehamn net", "url": "https://www.youtube.com/channel/UCTswPwHj4IbS0iyIewMjbnQ"}, "match": ["Mehamn"], "videoId": "2D8hhRDEzwY"},
+        {"id": "kirkenes", "name": {"en": "Kirkenes"}, "area": "Finnmark", "category": "north", "type": "city", "lat": 69.727, "lon": 30.045, "channel": {"name": "Sør-Varanger kommune", "url": "https://www.youtube.com/channel/UCWsRYU3f0gtQVcnWIds1Lxg"}, "match": ["kirketårnet"], "videoId": "6rE0ua2lVaM"},
+        {"id": "finse-station", "name": {"en": "Finse station", "fr": "Gare de Finse"}, "area": "Hardangervidda", "category": "mountains", "type": "rail", "lat": 60.6019, "lon": 7.5047, "channel": {"name": "Ståle Ualand", "url": "https://www.youtube.com/channel/UCCVQgh_IDJ0N2BDHuDfW0NA"}, "match": ["Finse station"], "videoId": "76KqHKyYtmU"},
+        {"id": "vindoldalen", "name": {"en": "Vindøldalen"}, "area": "Surnadal", "category": "mountains", "type": "mountain", "lat": 62.85, "lon": 8.95, "channel": {"name": "Live Norway", "url": "https://www.youtube.com/channel/UCagckRRHeGkG7iwPl91hUpg"}, "match": ["Vindøldalen"], "videoId": "TRcvF87YVK0"},
+        {"id": "skimore-oslo", "name": {"en": "Oslo Vinterpark"}, "area": "Oslo", "category": "mountains", "type": "mountain", "lat": 59.98, "lon": 10.67, "channel": {"name": "Norway Live", "url": "https://www.youtube.com/channel/UCgAmmVZsZ4vfDH-vtWawaOg"}, "match": ["Oslo Skimore"], "videoId": "qyeyVNulaiU"},
+        {"id": "skimore-drammen", "name": {"en": "Drammen ski area", "fr": "Drammen, domaine skiable"}, "area": "Drammen", "category": "mountains", "type": "mountain", "lat": 59.76, "lon": 10.15, "channel": {"name": "Norway Live", "url": "https://www.youtube.com/channel/UCgAmmVZsZ4vfDH-vtWawaOg"}, "match": ["Drammen Skimore"], "videoId": "6LiukKeHyBc"},
+        {"id": "skimore-kongsberg", "name": {"en": "Kongsberg ski area", "fr": "Kongsberg, domaine skiable"}, "area": "Kongsberg", "category": "mountains", "type": "mountain", "lat": 59.66, "lon": 9.6, "channel": {"name": "Norway Live", "url": "https://www.youtube.com/channel/UCgAmmVZsZ4vfDH-vtWawaOg"}, "match": ["Kongsberg Skimore"], "videoId": "-WkH_DfA8Q4"},
+        {"id": "norefjell", "name": {"en": "Norefjell"}, "area": "Buskerud", "category": "mountains", "type": "mountain", "lat": 60.21, "lon": 9.53, "channel": {"name": "Norway Live - Kanal 2", "url": "https://www.youtube.com/channel/UCI5s5kx5FtdgMFdMDDXU3DA"}, "match": ["Norerfjell", "Norefjell"], "videoId": "1tW5vy1at_c"},
+        {"id": "nesfjellet", "name": {"en": "Nesfjellet"}, "area": "Hallingdal", "category": "mountains", "type": "mountain", "lat": 60.58, "lon": 9.0, "channel": {"name": "Norway Live - Kanal 2", "url": "https://www.youtube.com/channel/UCI5s5kx5FtdgMFdMDDXU3DA"}, "match": ["Nesfjellet"], "videoId": "0NiTovrThdQ"},
+        {"id": "gausta", "name": {"en": "Gaustablikk"}, "area": "Telemark", "category": "mountains", "type": "mountain", "lat": 59.85, "lon": 8.65, "channel": {"name": "Norway Live - Kanal 2", "url": "https://www.youtube.com/channel/UCI5s5kx5FtdgMFdMDDXU3DA"}, "match": ["Gausta"], "videoId": "NGGIyXwoSiU"},
+        {"id": "rauland", "name": {"en": "Rauland"}, "area": "Telemark", "category": "mountains", "type": "mountain", "lat": 59.7, "lon": 8.05, "channel": {"name": "Norway Live - Kanal3", "url": "https://www.youtube.com/channel/UCWGnrzAM1XZFK9EDxNWRsjg"}, "match": ["Rauland"], "videoId": "txyNT3jm6ls"},
+        {"id": "beitostolen", "name": {"en": "Beitostølen"}, "area": "Valdres", "category": "mountains", "type": "mountain", "lat": 61.25, "lon": 8.9, "channel": {"name": "Norway Live", "url": "https://www.youtube.com/channel/UCgAmmVZsZ4vfDH-vtWawaOg"}, "match": ["Beitostølen"], "videoId": "FtIu4-7VYMs"},
+        {"id": "kvitfjell", "name": {"en": "Kvitfjell"}, "area": "Gudbrandsdalen", "category": "mountains", "type": "mountain", "lat": 61.47, "lon": 10.13, "channel": {"name": "Norway Live - Kanal3", "url": "https://www.youtube.com/channel/UCWGnrzAM1XZFK9EDxNWRsjg"}, "match": ["Kvitfjell"], "videoId": "1zsxh_J1jHE"},
+        {"id": "voss-resort", "name": {"en": "Voss Resort"}, "area": "Voss", "category": "mountains", "type": "mountain", "lat": 60.65, "lon": 6.4, "channel": {"name": "Norway Live - Kanal 2", "url": "https://www.youtube.com/channel/UCI5s5kx5FtdgMFdMDDXU3DA"}, "match": ["VOSS LIVE"], "videoId": "WwM_A6iiqKE"},
+        {"id": "myrkdalen", "name": {"en": "Myrkdalen"}, "area": "Voss", "category": "mountains", "type": "mountain", "lat": 60.87, "lon": 6.47, "channel": {"name": "Norway Live", "url": "https://www.youtube.com/channel/UCgAmmVZsZ4vfDH-vtWawaOg"}, "match": ["Myrkdalen"], "videoId": "ogH1z3eTi2Q"},
+        {"id": "sogndal-hodlekve", "name": {"en": "Sogndal, Hodlekve"}, "area": "Sogn", "category": "mountains", "type": "mountain", "lat": 61.3, "lon": 7.0, "channel": {"name": "Norway Live - Kanal3", "url": "https://www.youtube.com/channel/UCWGnrzAM1XZFK9EDxNWRsjg"}, "match": ["Sogndal"], "videoId": "w9XaEQEvQaw"},
+        {"id": "vassfjellet", "name": {"en": "Vassfjellet"}, "area": "Trondheim", "category": "mountains", "type": "mountain", "lat": 63.29, "lon": 10.42, "channel": {"name": "Norway Live - Kanal 2", "url": "https://www.youtube.com/channel/UCI5s5kx5FtdgMFdMDDXU3DA"}, "match": ["Vassfjellet"], "videoId": "vXT9OqIEihY"}
+      ]
+    },
+    {
+      "id": "sweden",
+      "name": {"en": "Sweden", "fr": "Suède"},
+      "country": "se",
+      "clockLabel": "SE",
+      "lat": 59.3293,
+      "lon": 18.0686,
+      "timezone": "Europe/Stockholm",
+      "zoom": 5,
+      "categories": [
+        {"id": "stockholm", "name": {"en": "Stockholm"}},
+        {"id": "coast", "name": {"en": "West & south coasts", "fr": "Côtes ouest et sud"}},
+        {"id": "north", "name": {"en": "Dalarna, mountains & Lapland", "fr": "Dalécarlie, montagnes et Laponie"}}
+      ],
+      "cameras": [
+        {"id": "stockholm-city", "name": {"en": "Stockholm rooftops", "fr": "Toits de Stockholm"}, "area": "Stockholm", "category": "stockholm", "type": "skyline", "lat": 59.335, "lon": 18.06, "channel": {"name": "Flaming Fire", "url": "https://www.youtube.com/channel/UCxdkv0StDfmn1dXWStAt2tw"}, "match": ["Stockholm city live cam"], "videoId": "KKZn6fxogmM"},
+        {"id": "stockholm-dn-skrapan", "name": {"en": "Stockholm from DN-Skrapan", "fr": "Stockholm depuis DN-Skrapan"}, "area": "Marieberg", "category": "stockholm", "type": "skyline", "lat": 59.3095, "lon": 18.02, "channel": {"name": "MED - Mediateknik", "url": "https://www.youtube.com/channel/UCdCuDRxgLpYAu3Mi-0GJYZQ"}, "match": ["DN-Skrapan"], "videoId": "agY6ZaM1G_o"},
+        {"id": "goteborg-gothia-towers", "name": {"en": "Gothenburg, Liseberg", "fr": "Göteborg, Liseberg"}, "area": "Göteborg", "category": "coast", "type": "city", "lat": 57.697, "lon": 11.988, "channel": {"name": "Gothia Towers", "url": "https://www.youtube.com/channel/UCM_rTWiVU5SPVOAjmN_orZw"}, "match": ["Gothia Towers"], "videoId": "0Ym70PbloLw"},
+        {"id": "uddevalla", "name": {"en": "Uddevalla"}, "area": "Bohuslän", "category": "coast", "type": "city", "lat": 58.349, "lon": 11.94, "channel": {"name": "ITCONNECT", "url": "https://www.youtube.com/channel/UClXSl8cHZjnYCo2OajOX7Kw"}, "match": ["Uddevallakameran"], "videoId": "Hv0WdxvG05k"},
+        {"id": "varberg-torg", "name": {"en": "Varberg main square", "fr": "Varberg, grand-place"}, "area": "Varberg", "category": "coast", "type": "city", "lat": 57.1057, "lon": 12.25, "channel": {"name": "MED - Mediateknik", "url": "https://www.youtube.com/channel/UCdCuDRxgLpYAu3Mi-0GJYZQ"}, "match": ["Varbergs torg"], "videoId": "BMTxMn6IYBQ"},
+        {"id": "varberg-fastningen", "name": {"en": "Varberg fortress", "fr": "Forteresse de Varberg"}, "area": "Varberg", "category": "coast", "type": "landmark", "lat": 57.104, "lon": 12.244, "channel": {"name": "MED - Mediateknik", "url": "https://www.youtube.com/channel/UCdCuDRxgLpYAu3Mi-0GJYZQ"}, "match": ["Fästningen"], "videoId": "fp39XWPMqag"},
+        {"id": "varberg-apelviken", "name": {"en": "Apelviken beach", "fr": "Plage d'Apelviken"}, "area": "Varberg", "category": "coast", "type": "beach", "lat": 57.087, "lon": 12.25, "channel": {"name": "MED - Mediateknik", "url": "https://www.youtube.com/channel/UCdCuDRxgLpYAu3Mi-0GJYZQ"}, "match": ["Stormhuset - Apelviken"], "videoId": "7TVhopVz3Gg"},
+        {"id": "varberg-kasa-strand", "name": {"en": "Kåsa beach", "fr": "Plage de Kåsa"}, "area": "Varberg", "category": "coast", "type": "beach", "lat": 57.06, "lon": 12.24, "channel": {"name": "MED - Mediateknik", "url": "https://www.youtube.com/channel/UCdCuDRxgLpYAu3Mi-0GJYZQ"}, "match": ["Kåsa Strand"], "videoId": "p49CeURYHUM"},
+        {"id": "falkenberg-tullbron", "name": {"en": "Falkenberg, Tullbron"}, "area": "Falkenberg", "category": "coast", "type": "city", "lat": 56.905, "lon": 12.497, "channel": {"name": "MED - Mediateknik", "url": "https://www.youtube.com/channel/UCdCuDRxgLpYAu3Mi-0GJYZQ"}, "match": ["Tullbron"], "videoId": "6DqZ0BoC8-Q"},
+        {"id": "falkenberg-strandbad", "name": {"en": "Falkenberg beach pier", "fr": "Falkenberg, ponton de plage"}, "area": "Falkenberg", "category": "coast", "type": "beach", "lat": 56.887, "lon": 12.49, "channel": {"name": "MED - Mediateknik", "url": "https://www.youtube.com/channel/UCdCuDRxgLpYAu3Mi-0GJYZQ"}, "match": ["Falkenberg Strandbad"], "videoId": "BGYTM6E5ls8"},
+        {"id": "trelleborg", "name": {"en": "Trelleborg"}, "area": "Skåne", "category": "coast", "type": "city", "lat": 55.375, "lon": 13.157, "channel": {"name": "Trelleborgs Kommun", "url": "https://www.youtube.com/channel/UCgB_8lC4ZwaYxMKhfDatXyw"}, "match": ["Live Camera"], "videoId": "85OM8_W_mag"},
+        {"id": "tallberg", "name": {"en": "Tällberg, Lake Siljan", "fr": "Tällberg, lac Siljan"}, "area": "Dalarna", "category": "north", "type": "nature", "lat": 60.82, "lon": 14.99, "channel": {"name": "Tällbergsgårdens Hotell", "url": "https://www.youtube.com/channel/UC7HC8YVXtdONwWnE_o2gYyg"}, "match": ["Tallbergsgarden"], "videoId": "WmQMfElQSVE"},
+        {"id": "salen-stoten", "name": {"en": "Sälen, Stöten"}, "area": "Dalarna", "category": "north", "type": "mountain", "lat": 61.27, "lon": 12.89, "channel": {"name": "Webbkameror", "url": "https://www.youtube.com/channel/UCIUsuJRycEwBhxqYkOjwyhg"}, "match": ["Farfars Fartvind"], "videoId": "lBUlkp8U1wA"},
+        {"id": "salen-lindvallen", "name": {"en": "Sälen, Lindvallen"}, "area": "Dalarna", "category": "north", "type": "mountain", "lat": 61.155, "lon": 13.17, "channel": {"name": "SkiStar", "url": "https://www.youtube.com/channel/UCeHmZ--JdSfMSjRCNsszatA"}, "match": ["Lindvallen"], "videoId": "FhhGDEhibkI"},
+        {"id": "tanndalen", "name": {"en": "Tänndalen"}, "area": "Härjedalen", "category": "north", "type": "mountain", "lat": 62.55, "lon": 12.3, "channel": {"name": "Tänndalen", "url": "https://www.youtube.com/channel/UCu6TXsEJzQ6oJISvlWtdA8A"}, "match": ["Buskvallen"], "videoId": "CEVzMapEG80"},
+        {"id": "vilhelmina", "name": {"en": "Vilhelmina"}, "area": "Lapland", "category": "north", "type": "city", "lat": 64.625, "lon": 16.655, "channel": {"name": "Webcams Touristiques", "url": "https://www.youtube.com/channel/UC2yvEE-JNoBXDp42-Z7IFiQ"}, "match": ["VILHELMINA"], "videoId": "d7F9hYZh_XU"},
+        {"id": "arvidsjaur", "name": {"en": "Arvidsjaur"}, "area": "Lapland", "category": "north", "type": "city", "lat": 65.59, "lon": 19.17, "channel": {"name": "Live Arvidsjaur", "url": "https://www.youtube.com/channel/UCo9Ppp8AjdfXqocqcNI_krA"}, "match": ["Live Camera Arvidsjaur"], "videoId": "Dnw_l8f9rUc"},
+        {"id": "bjorkliden", "name": {"en": "Björkliden"}, "area": "Lapland", "category": "north", "type": "mountain", "lat": 68.405, "lon": 18.68, "channel": {"name": "Björkliden Lapland Resorts", "url": "https://www.youtube.com/channel/UCjjQH4AqvWu-zOrbbiW5aTg"}, "match": ["Björkliden"], "videoId": "0pE2DNIcqoI"}
+      ]
+    },
+    {
+      "id": "denmark",
+      "name": {"en": "Denmark", "fr": "Danemark"},
+      "country": "dk",
+      "clockLabel": "DK",
+      "lat": 55.95,
+      "lon": 8.15,
+      "timezone": "Europe/Copenhagen",
+      "zoom": 9,
+      "categories": [
+        {"id": "west-jutland", "name": {"en": "West Jutland coast", "fr": "Côte ouest du Jutland"}}
+      ],
+      "cameras": [
+        {"id": "lyngvig-fyr", "name": {"en": "Lyngvig lighthouse", "fr": "Phare de Lyngvig"}, "area": "Holmsland Klit", "category": "west-jutland", "type": "beach", "lat": 56.0497, "lon": 8.1036, "channel": {"name": "Lyngvig Fyr Webcam 1", "url": "https://www.youtube.com/channel/UCzICof1FbbLBV1qO7mUV6Nw"}, "match": ["Lyngvig Fyr"], "videoId": "5Z6Nhw6USVw"},
+        {"id": "hvide-sande", "name": {"en": "Hvide Sande"}, "area": "Holmsland Klit", "category": "west-jutland", "type": "port", "lat": 55.999, "lon": 8.127, "channel": {"name": "Feriepartner Hvide Sande", "url": "https://www.youtube.com/channel/UCZnXr3hCVE0LhVq3wH_-jAQ"}, "match": ["Hvide Sande"], "videoId": "0DT9KOvdsTc"},
+        {"id": "henne-strand", "name": {"en": "Henne Strand"}, "area": "Henne", "category": "west-jutland", "type": "beach", "lat": 55.737, "lon": 8.18, "channel": {"name": "Købmand Hansens Feriehusudlejning", "url": "https://www.youtube.com/channel/UCssgkk6dhVpL-v6K5yPjIzw"}, "match": ["Henne Strand"], "videoId": "9B8e3Y8JPUk"}
       ]
     },
     {

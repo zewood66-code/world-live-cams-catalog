@@ -32,6 +32,9 @@ DISCOVERY = {
     "england": (["UK live webcam"], ["london", "england", "uk", "beach", "harbour", "cornwall", "devon", "dorset"]),
     "france": (["webcam en direct France"], ["paris", "france", "corse", "bretagne", "port", "plage", "webcam"]),
     "poland": (["kamera na żywo"], ["kamera", "na żywo", "polska", "poland", "kraków", "gdańsk", "warszawa"]),
+    "norway": (["Norway live webcam"], ["norway", "norge", "oslo", "bergen", "tromsø", "fjord", "havn", "lofoten"]),
+    "sweden": (["webbkamera live"], ["sweden", "sverige", "stockholm", "göteborg", "webbkamera", "strand"]),
+    "denmark": (["webcam Danmark live"], ["denmark", "danmark", "dänemark", "københavn", "copenhagen", "havn", "strand"]),
 }
 # Les balades filmées, émissions et loteries ne sont pas des webcams.
 EXCLUDED_WORDS = ["walk", "driving", "draw", "news", "bird", "podcast", "nfl", "music", "radio", "msza", "msfs",
