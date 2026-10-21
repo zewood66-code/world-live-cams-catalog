@@ -28,6 +28,7 @@ API = "https://www.googleapis.com/youtube/v3/"
 DISCOVERY = {
     "nyc": (["NYC live cam"], ["nyc", "new york city", "manhattan", "brooklyn", "queens", "bronx", "times square"]),
     "dc": (["Washington DC live cam"], ["washington", " dc", "d.c.", "potomac", "national mall"]),
+    "nevada": (["Las Vegas live cam"], ["las vegas", "nevada", "fremont", "reno", "tahoe"]),
     "england": (["UK live webcam"], ["london", "england", "uk", "beach", "harbour", "cornwall", "devon", "dorset"]),
     "france": (["webcam en direct France"], ["paris", "france", "corse", "bretagne", "port", "plage", "webcam"]),
     "poland": (["kamera na żywo"], ["kamera", "na żywo", "polska", "poland", "kraków", "gdańsk", "warszawa"]),
