@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-10-21T16:49:19Z",
+  "updatedAt": "2026-10-21T16:59:46Z",
   "places": [
     {
       "id": "nyc",
@@ -411,7 +411,35 @@
         {"id": "dalmore-beach", "name": {"en": "Dalmore beach, Lewis", "fr": "Plage de Dalmore, Lewis"}, "area": "Outer Hebrides", "category": "scotland", "type": "beach", "lat": 58.29, "lon": -6.73, "channel": {"name": "Hebridean Live Cams", "url": "https://www.youtube.com/channel/UClBjO6wiSJVHKWIPMAH6Ciw"}, "match": ["Dalmore Beach"], "videoId": "ScdqJ40M2tY"},
         {"id": "berneray-east-beach", "name": {"en": "Berneray East Beach", "fr": "Berneray, plage est"}, "area": "Outer Hebrides", "category": "scotland", "type": "beach", "lat": 57.72, "lon": -7.15, "channel": {"name": "East Beach Berneray", "url": "https://www.youtube.com/channel/UCWuoYuUza2qNg4L2Di-rZsA"}, "match": ["East Beach"], "videoId": "5j1ylYGSNUY"},
         {"id": "portrush-east-strand", "name": {"en": "Portrush, East Strand"}, "area": "County Antrim", "category": "northern-ireland", "type": "beach", "lat": 55.2, "lon": -6.65, "channel": {"name": "Portrush Live Surf Cam", "url": "https://www.youtube.com/channel/UC1lHYBK_YeXDJv6sedRwW0A"}, "match": ["Portrush"], "videoId": "MOuzujw_Z7E"},
-        {"id": "ballygally-beach", "name": {"en": "Ballygally beach", "fr": "Plage de Ballygally"}, "area": "County Antrim", "category": "northern-ireland", "type": "beach", "lat": 54.9, "lon": -5.86, "channel": {"name": "The Line Up NI | Coast & Cam", "url": "https://www.youtube.com/channel/UCnzmNf3t27a4pkiNASbJsGQ"}, "match": ["Ballygally"], "videoId": "j9cxqZsIMLg"}
+        {"id": "ballygally-beach", "name": {"en": "Ballygally beach", "fr": "Plage de Ballygally"}, "area": "County Antrim", "category": "northern-ireland", "type": "beach", "lat": 54.9, "lon": -5.86, "channel": {"name": "The Line Up NI | Coast & Cam", "url": "https://www.youtube.com/channel/UCnzmNf3t27a4pkiNASbJsGQ"}, "match": ["Ballygally"], "videoId": "j9cxqZsIMLg"},
+        {"id": "larne", "name": {"en": "Larne"}, "area": "County Antrim", "category": "northern-ireland", "type": "port", "lat": 54.85, "lon": -5.82, "channel": {"name": "Larne Live Webcam", "url": "https://www.youtube.com/channel/UCmCG5UUphTlx7a1DEPJPJ1A"}, "match": ["Larne"], "videoId": "18S_qUWg__w"}
+      ]
+    },
+    {
+      "id": "ireland",
+      "name": {"en": "Ireland", "fr": "Irlande"},
+      "country": "ie",
+      "clockLabel": "IE",
+      "lat": 53.3498,
+      "lon": -6.2603,
+      "timezone": "Europe/Dublin",
+      "zoom": 7,
+      "categories": [
+        {"id": "dublin", "name": {"en": "Dublin"}},
+        {"id": "dublin-port", "name": {"en": "Dublin Port & Bay", "fr": "Port et baie de Dublin"}},
+        {"id": "atlantic", "name": {"en": "Wild Atlantic Way", "fr": "Côte atlantique"}}
+      ],
+      "cameras": [
+        {"id": "ec-templebar", "name": {"en": "Temple Bar"}, "area": "Temple Bar", "category": "dublin", "type": "city", "lat": 53.3455, "lon": -6.2643, "source": "earthcam", "page": "https://www.earthcam.com/world/ireland/dublin/?cam=templebar", "cam": "templebar", "channel": {"name": "EarthCam", "url": "https://www.earthcam.com/world/ireland/dublin/?cam=templebar"}, "thumbnail": "https://static.earthcam.com/camshots/512x288/6716cc8488718ff199b2296d88693c67.jpg"},
+        {"id": "ec-dublinpub", "name": {"en": "Temple Bar pub", "fr": "Pub de Temple Bar"}, "area": "Temple Bar", "category": "dublin", "type": "city", "lat": 53.3454, "lon": -6.2645, "source": "earthcam", "page": "https://www.earthcam.com/world/ireland/dublin/?cam=dublinpub", "cam": "dublinpub", "channel": {"name": "EarthCam", "url": "https://www.earthcam.com/world/ireland/dublin/?cam=dublinpub"}, "thumbnail": "https://static.earthcam.com/camshots/512x288/fb91ad7452f4e5538102e03754c7a3fd.jpg"},
+        {"id": "dublin-rathmines", "name": {"en": "Rathmines"}, "area": "Dublin Southside", "category": "dublin", "type": "skyline", "lat": 53.3225, "lon": -6.2655, "channel": {"name": "LivefromIreland - Live Streaming Webcams", "url": "https://www.youtube.com/channel/UCXtzCdsTkuBWIrOSuMNvANQ"}, "match": ["Rathmines"], "videoId": "hIlYtjhRK_0"},
+        {"id": "dublin-glasnevin", "name": {"en": "Glasnevin, Brian Boru pub", "fr": "Glasnevin, pub Brian Boru"}, "area": "Dublin Northside", "category": "dublin", "type": "city", "lat": 53.3605, "lon": -6.2785, "channel": {"name": "LivefromIreland - Live Streaming Webcams", "url": "https://www.youtube.com/channel/UCXtzCdsTkuBWIrOSuMNvANQ"}, "match": ["Brian Boru"], "videoId": "Abr7V_AsEMA"},
+        {"id": "dublin-cabra-road", "name": {"en": "Cabra Road"}, "area": "Dublin Northside", "category": "dublin", "type": "city", "lat": 53.3605, "lon": -6.2885, "channel": {"name": "LivefromIreland - Live Streaming Webcams", "url": "https://www.youtube.com/channel/UCXtzCdsTkuBWIrOSuMNvANQ"}, "match": ["Cabra Road"], "videoId": "8bqXtRoleVw"},
+        {"id": "dublin-north-circular-road", "name": {"en": "North Circular Road"}, "area": "Dublin Northside", "category": "dublin", "type": "city", "lat": 53.3585, "lon": -6.2735, "channel": {"name": "LivefromIreland - Live Streaming Webcams", "url": "https://www.youtube.com/channel/UCXtzCdsTkuBWIrOSuMNvANQ"}, "match": ["North Circular Road Live Webcam"], "videoId": "eSWxGOZLgCU"},
+        {"id": "dublin-port-liffey", "name": {"en": "River Liffey & Dublin Port", "fr": "La Liffey et le port de Dublin"}, "area": "Dublin Port", "category": "dublin-port", "type": "port", "lat": 53.347, "lon": -6.22, "channel": {"name": "Dublin Port", "url": "https://www.youtube.com/channel/UCeGyo_v1ppwH-e77CVqLSJg"}, "match": ["Dublin Port City View"], "videoId": "K_ye7QHXosQ"},
+        {"id": "dublin-port-poolbeg", "name": {"en": "Poolbeg lighthouse view", "fr": "Vue vers le phare de Poolbeg"}, "area": "Dublin Port", "category": "dublin-port", "type": "port", "lat": 53.344, "lon": -6.2, "channel": {"name": "Dublin Port", "url": "https://www.youtube.com/channel/UCeGyo_v1ppwH-e77CVqLSJg"}, "match": ["Poolbeg Lighthouse"], "videoId": "jy3fkOBIolk"},
+        {"id": "dublin-bay", "name": {"en": "Dublin Bay", "fr": "Baie de Dublin"}, "area": "Dublin Port", "category": "dublin-port", "type": "port", "lat": 53.343, "lon": -6.19, "channel": {"name": "Dublin Port", "url": "https://www.youtube.com/channel/UCeGyo_v1ppwH-e77CVqLSJg"}, "match": ["Dublin Bay Live"], "videoId": "oxx7MqjhOpw"},
+        {"id": "sky-kerry-kerry", "name": {"en": "Kerry coast & Skellig Islands", "fr": "Côte du Kerry et îles Skellig"}, "area": "County Kerry", "category": "atlantic", "type": "nature", "lat": 51.85, "lon": -10.3, "source": "skyline", "page": "https://www.skylinewebcams.com/en/webcam/ireland/munster/kerry/kerry.html", "channel": {"name": "SkylineWebcams", "url": "https://www.skylinewebcams.com/en/webcam/ireland/munster/kerry/kerry.html"}, "thumbnail": "https://cdn.skylinewebcams.com/social1413.jpg"}
       ]
     },
     {

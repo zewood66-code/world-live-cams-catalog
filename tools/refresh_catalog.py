@@ -31,6 +31,7 @@ DISCOVERY = {
     "nevada": (["Las Vegas live cam"], ["las vegas", "nevada", "fremont", "reno", "tahoe"]),
     "england": (["UK live webcam"], ["london", "england", "uk", "beach", "harbour", "cornwall", "devon", "dorset",
                                          "scotland", "wales", "edinburgh", "pembrokeshire", "northern ireland"]),
+    "ireland": (["Ireland live webcam"], ["ireland", "dublin", "galway", "cork", "kerry", "donegal", "wexford"]),
     "france": (["webcam en direct France"], ["paris", "france", "corse", "bretagne", "port", "plage", "webcam"]),
     "poland": (["kamera na żywo"], ["kamera", "na żywo", "polska", "poland", "kraków", "gdańsk", "warszawa"]),
     "norway": (["Norway live webcam"], ["norway", "norge", "oslo", "bergen", "tromsø", "fjord", "havn", "lofoten"]),
