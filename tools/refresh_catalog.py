@@ -139,11 +139,15 @@ def refresh(yt, catalog):
 def discover(yt, catalog):
     cameras = youtube_cameras(catalog)
     known_ids = {c.get("videoId") for c in cameras}
+    now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     lines = [
         "# Directs candidats",
         "",
         "Directs trouvés par la recherche YouTube quotidienne et absents du catalogue, par destination.",
         "À vérifier à la main (certains « 24/7 » rediffusent de vieilles images) avant de les ajouter à `catalog.json`.",
+        "",
+        # Lue par le workflow pour relancer la recherche quand elle a plus de 20 h.
+        f"Dernière recherche : {now}",
     ]
     for place_id, (queries, words) in DISCOVERY.items():
         candidates = {}

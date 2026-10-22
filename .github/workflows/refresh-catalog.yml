@@ -23,9 +23,12 @@ jobs:
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
         run: |
-          # Recherche de nouveaux directs une fois par jour (6 h UTC) ou au lancement manuel.
+          # Recherche de nouveaux directs quand la dernière a plus de 20 h, ou au lancement manuel.
+          # (GitHub saute la plupart des lancements horaires : viser une heure fixe la ratait presque toujours.)
+          last=$(sed -n 's/^Dernière recherche : //p' tools/candidates.md)
+          age=$(( $(date -u +%s) - $(date -u -d "${last:-1970-01-01}" +%s) ))
           extra=""
-          if [ "$(date -u +%H)" = "06" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+          if [ "$age" -ge 72000 ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             extra="--discover tools/candidates.md"
           fi
           python3 tools/refresh_catalog.py catalog.json $extra
