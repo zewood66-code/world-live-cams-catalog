@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-10-22T16:46:15Z",
+  "updatedAt": "2026-10-22T16:46:58Z",
   "places": [
     {
       "id": "nyc",
@@ -1232,7 +1232,7 @@
         {"id": "air-lga", "name": {"en": "LaGuardia (LGA)"}, "area": "New York", "category": "atc", "type": "airport", "lat": 40.7769, "lon": -73.874, "channel": {"name": "Flightradar24", "url": "https://www.youtube.com/@Flightradar24DotCom"}, "match": ["LGA Airport"], "videoId": "T_QsY01tIK0", "timezone": "America/New_York", "clockLabel": "LGA"},
         {"id": "air-lax-24", "name": {"en": "Los Angeles LAX, 24L/24R"}, "area": "Los Angeles", "category": "atc", "type": "airport", "lat": 33.95, "lon": -118.401, "channel": {"name": "AirlineVideosLive+", "url": "https://www.youtube.com/channel/UCox5yCEEjk4iYbhLgyj90EQ"}, "match": ["24L & 24R"], "videoId": "n4I0d44oBEs", "timezone": "America/Los_Angeles", "clockLabel": "LAX"},
         {"id": "air-lax-25", "name": {"en": "Los Angeles LAX, 25L/25R"}, "area": "Los Angeles", "category": "atc", "type": "airport", "lat": 33.937, "lon": -118.41, "channel": {"name": "AirlineVideosLive+", "url": "https://www.youtube.com/channel/UCox5yCEEjk4iYbhLgyj90EQ"}, "match": ["25L & 25R"], "videoId": "KzsNnyN8D_Q", "timezone": "America/Los_Angeles", "clockLabel": "LAX"},
-        {"id": "air-atl", "name": {"en": "Atlanta (ATL)"}, "area": "Atlanta", "category": "atc", "type": "airport", "lat": 33.6407, "lon": -84.4277, "channel": {"name": "Southern Radar", "url": "https://www.youtube.com/channel/UCrI7ZJrxaUTeY8gM6ZtWLPQ"}, "match": ["Atlanta Airport"], "videoId": "BtVZhKVVC7k", "timezone": "America/New_York", "clockLabel": "ATL"},
+        {"id": "air-atl", "name": {"en": "Atlanta (ATL)"}, "area": "Atlanta", "category": "atc", "type": "airport", "lat": 33.6407, "lon": -84.4277, "channel": {"name": "Southern Radar", "url": "https://www.youtube.com/channel/UCrI7ZJrxaUTeY8gM6ZtWLPQ"}, "match": ["Atlanta Airport"], "videoId": "ZW-FAVzbNR4", "timezone": "America/New_York", "clockLabel": "ATL"},
         {"id": "air-mia", "name": {"en": "Miami (MIA)"}, "area": "Miami", "category": "atc", "type": "airport", "lat": 25.7959, "lon": -80.287, "channel": {"name": "PTZtv", "url": "https://www.youtube.com/channel/UCG8-xn6zUbEqmqlnsvrD33Q"}, "match": ["Miami Airport"], "videoId": "_GUsXnlVJmo", "timezone": "America/New_York", "clockLabel": "MIA"},
         {"id": "air-las", "name": {"en": "Las Vegas (LAS)"}, "area": "Las Vegas", "category": "atc", "type": "airport", "lat": 36.084, "lon": -115.1537, "channel": {"name": "LAS Vegas Airport LIVE", "url": "https://www.youtube.com/channel/UCYDCnc3YBEqxfuhvQ4rxqSA"}, "match": ["LAS Vegas Airport LIVE Camera"], "videoId": "iIUCaiiMmNs", "timezone": "America/Los_Angeles", "clockLabel": "LAS"},
         {"id": "air-msy", "name": {"en": "New Orleans (MSY)", "fr": "La Nouvelle-Orléans (MSY)"}, "area": "New Orleans", "category": "atc", "type": "airport", "lat": 29.9934, "lon": -90.258, "channel": {"name": "Flightradar24", "url": "https://www.youtube.com/@Flightradar24DotCom"}, "match": ["MSY Airport"], "videoId": "iZRbml7fnXI", "timezone": "America/Chicago", "clockLabel": "MSY"},
