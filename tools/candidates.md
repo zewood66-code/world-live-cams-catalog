@@ -3,23 +3,20 @@
 Directs trouvés par la recherche YouTube quotidienne et absents du catalogue, par destination.
 À vérifier à la main (certains « 24/7 » rediffusent de vieilles images) avant de les ajouter à `catalog.json`.
 
-Dernière recherche : 2026-10-24T12:42:49Z
+Dernière recherche : 2026-10-25T11:35:29Z
 
 ## nyc
 
-- **AE Signage** : [Times Square: 1515 Broadway View Live](https://www.youtube.com/watch?v=X4P3JK-pIxo)
 - **AE Signage** : [Times Square: 1560 Broadway View Live](https://www.youtube.com/watch?v=VXo0VqVcbK4)
 - **AE Signage** : [Times Square: Duffy Square 4K View Live](https://www.youtube.com/watch?v=pv-2pVViNwc)
 - **Above the Hook** : [Sandy Hook Bay / NYC Skyline / Highlands NJ Harbor Cam Livestream](https://www.youtube.com/watch?v=xIxvTSVeHGk)
-- **Brooklyn Waterfront Cams** : [🔴 NYC Live Cam — Brooklyn Bridge & Manhattan Bridge, East River 2026-10-24 4AM ET](https://www.youtube.com/watch?v=wWfVDu8dYKI)
+- **Brooklyn Waterfront Cams** : [🔴 NYC Live Cam — Brooklyn Bridge & Manhattan Bridge, East River 2026-10-25 2AM ET](https://www.youtube.com/watch?v=r08KSs-tHeU)
 - **Cam Nomad** : [🔴🅻🅸🆅🅴🔴Famous USA Cities Webcam Tour 🇺🇸🏙️Las Vegas NYC Miami🗺️Hollywood🌃24/7 Stream of American Life🚕](https://www.youtube.com/watch?v=pisk_b_LjBU)
-- **EIGHTYSGUY** : [🔴NYC LIVE CAM🚆Amtrak Trains & Hudson River Ambience 🎧 Relaxing ASMR](https://www.youtube.com/watch?v=ZVfTagheeks)
 - **St. George Tower** : [Live NYC Brooklyn Bridge, Lower Manhattan & New York Harbor Cam](https://www.youtube.com/watch?v=1kvGNR_A3DY)
 - **StreamTime Live** : [New York City Harbor, Brooklyn, New York / StreamTime LIVE](https://www.youtube.com/watch?v=l7b5RFAkKhY)
 - **Surveillance Map Foundation** : [SurveillanceMap LIVE · Times Square · NYC](https://www.youtube.com/watch?v=mkX71WMAmNI)
 - **The Surfers View** : [Manhattan Beach Cam and Surf Report](https://www.youtube.com/watch?v=tBEIYdw1HeM)
 - **Walkable Life** : [🔥🗽 Feels like SUMMER in NYC / Explore Manhattan](https://www.youtube.com/watch?v=9GMgeAnfj1U)
-- **Window Scenes** : [24/7 Winter Night Window View of New York City in 4K ❄️ Wind Sounds, Calm Snowfall for Sleep, Focus](https://www.youtube.com/watch?v=_YCQf3N9R_Q)
 - **ms36K** : [NYC Live Stream 24/7 🔴 New York City Live Cams / Times Square, Brooklyn Bridge, Sunrises and Sunsets](https://www.youtube.com/watch?v=dD5BV_lH-0w)
 
 ## dc
@@ -44,29 +41,25 @@ Dernière recherche : 2026-10-24T12:42:49Z
 ## england
 
 - **Aspects Holidays** : [Live webcam of St Ives Harbour in Cornwall, UK.](https://www.youtube.com/watch?v=T83mKGf_c3k)
+- **Beach Life Cams** : [OTC Watersports Portland Harbour (UK) Live Webcam](https://www.youtube.com/watch?v=T1XepttGILw)
 - **Cam Nomad** : [🌅🅻🅸🆅🅴🌅STORM AUSTEN Cornwall Coast Webcams Tour🌊Harbour & Beach🌪️England 🇬🇧 Waves🌬️Wind Ives,Marazion](https://www.youtube.com/watch?v=9RuV9Cc-LSA)
 - **Cam Nomad** : [🌍🅻🅸🆅🅴🌍Worldwide Webcam Tour📸Watch 500 Random Cams From All Around the World🗺️London Paris Sydnei🌠](https://www.youtube.com/watch?v=xeQJBMx2abw)
 - **Cam Nomad** : [🏖️🅻🅸🆅🅴🏖️Europe Beach Webcam Tour🏝️Real-Time🌊Water Temp🌡️Weather🇬🇷🇪🇸🇮🇹🇫🇷🇭🇷🇵🇹🇬🇧🇷🇴🇵🇱🇹🇷🇳🇱🇧🇪Benidorm Calp](https://www.youtube.com/watch?v=YUe13IPFvRI)
 - **Cam Nomad** : [👑🅻🅸🆅🅴👑STORM BOELO🌬️United Kingdom Seaside Webcams Tour🏖️Wales Cornwall Shores🌅England👑British Coast](https://www.youtube.com/watch?v=K2gBg7jjhIc)
-- **Daily Record** : [LIVE WEBCAM / Storm Boelo forecast to bring extreme weather to Scotland](https://www.youtube.com/watch?v=YmCkwTEHv4k)
-- **Dorset Council UK** : [Bridport Harbour (West Bay)](https://www.youtube.com/watch?v=KoB32C-liwI)
+- **Dorset Council UK** : [Lyme Regis Harbour](https://www.youtube.com/watch?v=rulGLEdCHZU)
 - **EarthCam** : [EarthCam Live:  Abbey Road Crossing (London, England)](https://www.youtube.com/watch?v=zMCea32gpmg)
 - **English Lakes Hotels, Resorts & Venues** : [Live Webcam from Low Wood Bay Resort & Spa — Lake Windermere, UK](https://www.youtube.com/watch?v=MK6MjpRLPWs)
 - **Haven Sports** : [Live Broad Haven Beach Pembrokeshire Webcam](https://www.youtube.com/watch?v=tkpmcVQroqs)
-- **Isle of Wight** : [🔴 Aspire Ryde Camera / Solent, Portsmouth & Southsea / Isle of Wight Webcams UK LIVE](https://www.youtube.com/watch?v=iSseyhD2eHE)
 - **Isle of Wight** : [🔴 Sandown Camera / Beach & Esplanade / Isle of Wight Webcams UK LIVE](https://www.youtube.com/watch?v=I0A2zRu1R0Q)
 - **Isle of Wight** : [🔴 Solent View 4K Camera / Ryde, Portsmouth & Southsea / Isle of Wight Webcams UK LIVE / All Saints](https://www.youtube.com/watch?v=N6pEg-_P52g)
 - **Isle of Wight** : [🔴 Ventnor Camera / Ventnor Esplanade Isle of Wight / LIVE UK Webcams](https://www.youtube.com/watch?v=CmsVx-EJU5A)
-- **Northumberland Astro** : [Northumberland Aurora Cam LIVE Stream (Cresswell, UK)](https://www.youtube.com/watch?v=MYeOK93smBw)
 - **Northumberland Astro** : [Northumberland Meteor Cam LIVE Stream (Embleton, UK)](https://www.youtube.com/watch?v=vK_d1lU0Up0)
 - **Ozolio Plus** : [St Ives Harbour Live Cam / Cornwall, England](https://www.youtube.com/watch?v=Iu5zg5iqVmw)
-- **Railcam** : [Horton-in-Ribblesdale Camera 1 / Railcam UK](https://www.youtube.com/watch?v=BnIq_jumCl8)
+- **Railcam** : [Crewe Camera 6 / Railcam UK](https://www.youtube.com/watch?v=t65TCpcJOPQ)
 - **Railcam** : [Isle Of Wight, Ryde Pier & Solent Scenic Cam / Railcam UK](https://www.youtube.com/watch?v=R1P9v9bEtuk)
 - **Railcam** : [Railcam UK Sampler Stream](https://www.youtube.com/watch?v=ZC7HiaMkmlU)
 - **Railcam** : [York ROC Camera No.1, Yorkshire UK - in Partnership with Network Rail / Railcam LIVE](https://www.youtube.com/watch?v=vByZX49lCic)
-- **RailcamLive - WSR ** : [WSR - Williton Camera 1, West Somerset Railway, Somerset UK / Railcam LIVE](https://www.youtube.com/watch?v=77rYzQYyQYQ)
 - **RailcamLive - WSR ** : [WSR - Williton Camera 2, West Somerset Railway, Somerset UK / Railcam LIVE](https://www.youtube.com/watch?v=YHILlgN9cFs)
-- **Royal Harbour Live** : [Ramsgate Royal Harbour LIVE Webcam 24/7 / Inner Marina, Boats & Weather, Kent UK](https://www.youtube.com/watch?v=lSA3pKWjmc4)
 - **Seaton Tramway** : [Colyford Station Camera, Seaton Tramway, Devon UK / Railcam LIVE & Seaton Tramway](https://www.youtube.com/watch?v=7x4D0qmUkLg)
 - **kidney beans global** : [LONDON BUS RIDES 💫 DIGEST 🔴 LIVE CHAT ✨](https://www.youtube.com/watch?v=wDaV8EkYHmk)
 
@@ -82,22 +75,22 @@ Dernière recherche : 2026-10-24T12:42:49Z
 ## france
 
 - ** 🔴 Webcam Paris Tour Eiffel** : [🔴 **PARIS EN DIRECT – TOUR EIFFEL LIVE 24/7 / EIFFEL TOWER LIVE CAMERA 【4K】ULTRA-HD](https://www.youtube.com/watch?v=YkKGantlWH0)
-- **CIEUX INSTABLES ** : [Live WEBCAM Lille  • Ciel en Direct dans le Nord (France) / Météo Temps Réel 24/7](https://www.youtube.com/watch?v=PtH2JL9MEBw)
-- **CRUX** : [France LIVE / Looters Run Riot, Raid Shops In Paris, Lille, Montpellier And Marseille](https://www.youtube.com/watch?v=rfTFmTY9JtY)
 - **Cam Nomad** : [🌍🅻🅸🆅🅴🌍Worldwide Webcam Tour📸Watch 500 Random Cams From All Around the World🗺️London Paris Sydnei🌠](https://www.youtube.com/watch?v=xeQJBMx2abw)
 - **Cam Nomad** : [🟦🅻🅸🆅🅴⭐European Webcam Journey🎥A panoramic tour of 280 Europe’s cities and landscapes🎇Paris Rome😍](https://www.youtube.com/watch?v=zmv6NPLg91U)
 - **Cannes webcams : Boulevard du midi** : [🔴 LIVE WEBCAM CANNES - Boulevard du Midi](https://www.youtube.com/watch?v=z6BNMoj9Pyo)
 - **Cannes webcams : Quai Laubeuf** : [🔴 LIVE WEBCAM CANNES - Quai Laubeuf](https://www.youtube.com/watch?v=asO_10T0k2k)
-- **FRANCE 24** : [FRANCE 24 – EN DIRECT – Info et actualités internationales en continu 24h/24](https://www.youtube.com/watch?v=a47ckXKZjxI)
+- **Communauté de Communes des Villes Soeurs** : [Villes Soeurs - Tréport Plage](https://www.youtube.com/watch?v=8bRtD3VVbLY)
 - **Fort-Mahon plage - La webcam** : [Fort-Mahon Plage - Webcam en direct 4K](https://www.youtube.com/watch?v=dLLHgCHpY6E)
 - **Golfe du Morbihan Vannes Tourisme** : [Webcam en direct du port de Vannes](https://www.youtube.com/watch?v=dXckWr5B8f8)
 - **PARIS TV** : [Sacré-Cœur de Montmartre - Live Webcam 24/7 / PARIS TV](https://www.youtube.com/watch?v=-xzg3wujOVM)
 - **Peripherique Nord** : [Périphérique Nord - Porte de la Pape](https://www.youtube.com/watch?v=z545k7Tcb5o)
 - **WebCam NL** : [WebCam.NL / Charme.NL / live ultraHD camera. (4K)](https://www.youtube.com/watch?v=pOL0u6K4wLI)
+- **Webcams Touristiques** : [🔴 WEBCAM PORTO-VECCHIO EN DIRECT – BASTION DE FRANCE, CITADELLE & GOLFE / CORSE LIVE 24H/24 🏰🇨🇵](https://www.youtube.com/watch?v=D4ymOXDT2Xw)
 - **🔴 Les webcams de la Baie du Mont-Saint-Michel** : [🌊 PIROU EN DIRECT – Webcam LIVE plage, mer & météo dans le Cotentin](https://www.youtube.com/watch?v=D5QRseiVIYw)
 - **🔴 Les webcams de la Baie du Mont-Saint-Michel** : [🌊 Webcam Jullouville en direct – Côte Normande / Vision-Environnement](https://www.youtube.com/watch?v=tb4gGliRIhs)
 - **🔴 Vision-Environnement - Webcams LIVE** : [Webcam Brest - Hôtel de Ville](https://www.youtube.com/watch?v=SZmbvyfbPbg)
 - **🔴 Vision-Environnement - Webcams LIVE** : [Webcam Fécamp](https://www.youtube.com/watch?v=30hMtF2swvE)
+- **🔴 Vision-Environnement - Webcams LIVE** : [Webcam Langrune-sur-Mer](https://www.youtube.com/watch?v=OL7xrDcVZno)
 - **🔴 Vision-Environnement - Webcams LIVE** : [Webcam Le Havre - Port et MUMA](https://www.youtube.com/watch?v=wHWL7lDnChY)
 - **🔴 Vision-Environnement - Webcams LIVE** : [Webcam Luc-sur-Mer](https://www.youtube.com/watch?v=LZP48Tt9zeA)
 - **🔴 Vision-Environnement - Webcams LIVE** : [Webcam Mornac-sur-Seudre](https://www.youtube.com/watch?v=CeWhfDliulQ)
@@ -108,6 +101,7 @@ Dernière recherche : 2026-10-24T12:42:49Z
 - **🔴 Vision-Environnement - Webcams LIVE** : [Webcam Toulouse - Vue sur la Garonne](https://www.youtube.com/watch?v=Reuz0dRsBk0)
 - **🔴 Vision-Environnement - Webcams LIVE** : [Webcam Trouville-sur-Mer - Le Port](https://www.youtube.com/watch?v=igv2OEZVtzo)
 - **🔴 Webcam Saint-Malo - Les Thermes Marins** : [Webcam Saint-Malo en 4K - Les Thermes Marins](https://www.youtube.com/watch?v=VNOV8KgGR0c)
+- **🔴 Webcam en direct de Lanildut - Bretagne** : [🔴 Webcam Live Lanildut](https://www.youtube.com/watch?v=QzDQcYL8NXk)
 - **🔴 Webcams des Côtes Seinomarines - Normandie** : [Webcam du Port de Dieppe en direct](https://www.youtube.com/watch?v=uc6B5YWRM4A)
 - **🔴 Webcams des Côtes Seinomarines - Normandie** : [⚓ LE HAVRE EN DIRECT – Webcam LIVE Bassin du Commerce, port & météo en Normandie](https://www.youtube.com/watch?v=1okru4J3zLE)
 - **🔴 Webcams des Côtes Seinomarines - Normandie** : [🌆 LE HAVRE EN DIRECT – Webcam LIVE Hôtel de Ville, centre-ville & météo en Normandie](https://www.youtube.com/watch?v=vtJ3oGpr99I)
@@ -124,7 +118,6 @@ Dernière recherche : 2026-10-24T12:42:49Z
 - **Live Norway** : [Hammerfest Havn Live](https://www.youtube.com/watch?v=5VoO4DGb3K4)
 - **Live Norway** : [Port og Nordfjordeid](https://www.youtube.com/watch?v=jPwf4_MVpuE)
 - **Livestream Sjøgata 1** : [Bodø Havn - Sjøgata 1 - Live](https://www.youtube.com/watch?v=04jMCyigPQM)
-- **RailCowGirl** : [The Best Of Norway's Railway SUMMER AND FALL Cab Views](https://www.youtube.com/watch?v=tAWFO8_O_7M)
 
 ## sweden
 
