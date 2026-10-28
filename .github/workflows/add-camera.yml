@@ -1,0 +1,62 @@
+# Ajoute au catalogue la caméra décrite par une issue « Ajouter une caméra » (voir tools/add_camera.py).
+# Dépôt public : seules les issues du propriétaire sont traitées.
+name: Add camera
+
+on:
+  issues:
+    types: [opened, edited]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: add-camera-${{ github.event.issue.number }}
+  cancel-in-progress: true
+
+jobs:
+  add:
+    if: >-
+      github.event.issue.state == 'open' &&
+      github.event.issue.user.login == github.repository_owner &&
+      contains(github.event.issue.labels.*.name, 'add-camera')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Add camera and push
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          printf '%s' "$ISSUE_BODY" > "$RUNNER_TEMP/body.md"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Le rafraîchissement horaire peut pousser entre-temps : on repart alors du dernier catalogue.
+          for attempt in 1 2 3; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            if ! python3 tools/add_camera.py catalog.json --body "$RUNNER_TEMP/body.md" --report "$RUNNER_TEMP/report.md"; then
+              echo "status=error" >> "$GITHUB_ENV"
+              exit 0
+            fi
+            git commit -qam "catalog: add camera (#$ISSUE_NUMBER)"
+            if git push -q origin HEAD:main; then
+              echo "status=added" >> "$GITHUB_ENV"
+              exit 0
+            fi
+          done
+          echo "Échec du push après 3 essais." > "$RUNNER_TEMP/report.md"
+          echo "status=error" >> "$GITHUB_ENV"
+
+      - name: Report on the issue
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          [ -f "$RUNNER_TEMP/report.md" ] || echo "Le workflow a échoué, voir l'onglet Actions." > "$RUNNER_TEMP/report.md"
+          gh issue comment "$ISSUE_NUMBER" --body-file "$RUNNER_TEMP/report.md"
+          if [ "$status" = "added" ]; then
+            gh issue close "$ISSUE_NUMBER" --reason completed
+          fi

@@ -1,0 +1,117 @@
+# Formulaire d'ajout de caméra : le workflow add-camera.yml lit l'issue et ajoute la caméra à catalog.json.
+# Les libellés des champs sont lus par tools/add_camera.py (FIELDS) : les changer des deux côtés.
+name: Ajouter une caméra
+description: Ajoute une caméra au catalogue (seules les issues du propriétaire du dépôt sont traitées).
+title: "Caméra : "
+labels: ["add-camera"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Sources acceptées : **YouTube** (lien de la vidéo en direct), **EarthCam** (page avec `?cam=…`), **SkylineWebcams** et **webcamera.pl** (page de la caméra).
+        La caméra est ajoutée dès l'envoi ; en cas d'erreur, un commentaire l'explique : modifie l'issue pour réessayer.
+  - type: input
+    id: link
+    attributes:
+      label: Lien de la caméra
+      placeholder: https://www.youtube.com/watch?v=…
+    validations:
+      required: true
+  - type: dropdown
+    id: place
+    attributes:
+      label: Destination
+      options:
+        - nyc (New York)
+        - dc (Washington)
+        - boston (Boston)
+        - philadelphia (Philadelphie)
+        - losangeles (Los Angeles)
+        - nevada (Nevada)
+        - canada (Canada)
+        - england (Royaume-Uni)
+        - ireland (Irlande)
+        - france (France)
+        - poland (Pologne)
+        - norway (Norvège)
+        - sweden (Suède)
+        - denmark (Danemark)
+        - paradise-beaches (Plages paradisiaques)
+        - airports (Aéroports du monde)
+    validations:
+      required: true
+  - type: input
+    id: category
+    attributes:
+      label: Rangée
+      description: |
+        Identifiant de la rangée de l'accueil, selon la destination :
+        nyc : landmarks, skyline, bridges, neighborhoods, hamptons · dc : monuments, baltimore, region · boston : boston, north-shore, cape-cod, inland · philadelphia : philadelphia, pennsylvania · losangeles : los-angeles, beaches, orange, san-diego · nevada : strip, downtown, south, north · canada : quebec, ontario, british-columbia, prairies, atlantic · england : london, dorset, south-west, south-east, north, midlands, wales-north, wales-south, scotland, northern-ireland · ireland : dublin, dublin-port, atlantic · france : paris, riviera, mediterranean, corsica, brittany, atlantic, alps, lyon, pyrenees · poland : warsaw, krakow, tricity, wroclaw, baltic, masuria, tatras, beskids, sudetes, bieszczady, towns · norway : oslo, fjords, north, mountains · sweden : stockholm, coast, north · denmark : west-jutland · paradise-beaches : caribbean, abc, virgin-islands, mexico, keys, hawaii, maldives, indian-ocean, asia, brazil-atlantic · airports : atc, americas, europe, asia
+      placeholder: landmarks
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type de vue
+      description: Sert aux filtres de l'accueil.
+      options:
+        - city
+        - landmark
+        - skyline
+        - beach
+        - port
+        - mountain
+        - nature
+        - airport
+        - traffic
+        - rail
+    validations:
+      required: true
+  - type: input
+    id: name_en
+    attributes:
+      label: Nom (anglais)
+      placeholder: Times Square North 4K
+    validations:
+      required: true
+  - type: input
+    id: name_fr
+    attributes:
+      label: Nom (français)
+      description: Facultatif, si différent de l'anglais.
+  - type: input
+    id: area
+    attributes:
+      label: Lieu affiché
+      description: Quartier ou ville sous le nom de la caméra. Facultatif pour EarthCam (ville de la page).
+      placeholder: Midtown
+  - type: input
+    id: coords
+    attributes:
+      label: Coordonnées
+      description: Latitude, longitude (clic droit sur Google Maps, puis clic sur les nombres pour les copier). Facultatif pour EarthCam.
+      placeholder: 40.7590, -73.9851
+  - type: textarea
+    id: match
+    attributes:
+      label: Mots du titre YouTube
+      description: YouTube uniquement. Un ou plusieurs bouts du titre du direct (un par ligne), qui servent à le retrouver quand il redémarre. Évite les dates et les mots qui changent.
+      placeholder: Times Square North
+  - type: input
+    id: timezone
+    attributes:
+      label: Fuseau horaire
+      description: Obligatoire pour les destinations mondiales (plages paradisiaques, aéroports).
+      placeholder: Pacific/Honolulu
+  - type: input
+    id: clock
+    attributes:
+      label: Libellé de l'heure
+      description: Avec le fuseau horaire, par ex. le code IATA de l'aéroport.
+      placeholder: HNL
+  - type: input
+    id: camera_id
+    attributes:
+      label: Identifiant
+      description: Facultatif, généré sinon (ec-…, sky-…, wc-…, ou le nom pour YouTube).
