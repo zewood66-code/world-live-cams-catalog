@@ -103,6 +103,14 @@ def detect_source(link):
             raise FormError("Lien EarthCam : il manque `?cam=…` (ouvre la caméra voulue sur la page et recopie le lien).")
         page = f"https://www.earthcam.com{url.path}?cam={cam}"
         return "earthcam", {"page": page, "cam": cam}
+    if host == "share.earthcam.net":
+        match = re.match(r"/public/([^/]+)/([^/]+)/([^/?]+)", url.path)
+        if not match:
+            raise FormError("Lien share.earthcam.net : il faut `…/public/<client>/<projet>/<caméra>` "
+                            "(choisis la caméra dans le lecteur, puis recopie le lien).")
+        client, project, cam = match.groups()
+        return "earthcamshare", {"page": f"https://share.earthcam.net/public/{client}/{project}/{cam}",
+                                 "api": f"https://share.earthcam.net/api/v2/public/page/{client}/{project}", "cam": cam}
     if host == "skylinewebcams.com":
         path = re.sub(r"^/[a-z]{2}/webcam/", "/en/webcam/", url.path)
         if not path.startswith("/en/webcam/") or not path.endswith(".html"):
@@ -119,7 +127,8 @@ def detect_source(link):
         else:
             raise FormError("Lien webcamera.pl : il faut la page d'une caméra (`https://<caméra>.webcamera.pl/` ou `…/kamera/<caméra>/`).")
         return "webcamerapl", {"page": page, "slug": slug}
-    raise FormError("Lien non reconnu : YouTube, EarthCam, SkylineWebcams ou webcamera.pl uniquement.")
+    raise FormError("Lien non reconnu : YouTube, EarthCam (earthcam.com ou share.earthcam.net), SkylineWebcams "
+                    "ou webcamera.pl uniquement.")
 
 
 def youtube_video(video_id):
@@ -146,6 +155,18 @@ def earthcam_info(page, cam):
     info = cameras[cam]
     thumbnail = info.get("thumbimage", "").replace("/256x144/", "/512x288/")
     return info, thumbnail
+
+
+def earthcam_share_thumbnail(api, cam):
+    """Lecteur share.earthcam.net : vérifie le direct et renvoie l'image « live » de la caméra."""
+    cameras = {c["short_name"]: c for c in json.loads(fetch(api)).get("cameras", [])}
+    if cam not in cameras:
+        raise FormError(f"Le projet EarthCam ne contient pas la caméra `{cam}` (caméras : {', '.join(cameras)}).")
+    if "m3u8" not in json.loads(fetch(f"{api}/{cam}/live")).get("hls", ""):
+        raise FormError(f"La caméra EarthCam `{cam}` n'a pas de direct en ce moment.")
+    # La clé « ?,k=… » change à chaque appel et n'est pas vérifiée : on la retire.
+    return next((a["image"]["url"].split("?")[0] for a in cameras[cam].get("archives", [])
+                 if a.get("type") == "live" and a.get("image")), None)
 
 
 def skyline_thumbnail(page):
@@ -211,6 +232,12 @@ def build_camera(form, catalog):
         default_id = "ec-" + info["cam"]
         extra = {"source": source, "page": info["page"], "cam": info["cam"],
                  "channel": {"name": "EarthCam", "url": info["page"]}, "thumbnail": thumbnail}
+    elif source == "earthcamshare":
+        thumbnail = earthcam_share_thumbnail(info["api"], info["cam"])
+        default_id = "ecs-" + slugify(name["en"])
+        extra = {"source": source, "page": info["page"], "channel": {"name": "EarthCam", "url": info["page"]}}
+        if thumbnail:
+            extra["thumbnail"] = thumbnail
     elif source == "skyline":
         thumbnail = skyline_thumbnail(info["page"])
         default_id = "sky-" + "-".join(info["page"].removesuffix(".html").split("/")[-2:])

@@ -8,7 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Sources acceptées : **YouTube** (lien de la vidéo en direct), **EarthCam** (page avec `?cam=…`), **SkylineWebcams** et **webcamera.pl** (page de la caméra).
+        Sources acceptées : **YouTube** (lien de la vidéo en direct), **EarthCam** (page avec `?cam=…`, ou lecteur `share.earthcam.net/public/<client>/<projet>/<caméra>`, lisible à partir de l'appli 0.6.1), **SkylineWebcams** et **webcamera.pl** (page de la caméra).
         La caméra est ajoutée dès l'envoi ; en cas d'erreur, un commentaire l'explique : modifie l'issue pour réessayer.
   - type: input
     id: link
@@ -114,4 +114,4 @@ body:
     id: camera_id
     attributes:
       label: Identifiant
-      description: Facultatif, généré sinon (ec-…, sky-…, wc-…, ou le nom pour YouTube).
+      description: Facultatif, généré sinon (ec-…, ecs-…, sky-…, wc-…, ou le nom pour YouTube).
