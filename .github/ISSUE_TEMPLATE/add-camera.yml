@@ -29,6 +29,7 @@ body:
         - losangeles (Los Angeles)
         - nevada (Nevada)
         - florida (Floride)
+        - louisiana (Louisiane)
         - canada (Canada)
         - england (Royaume-Uni)
         - ireland (Irlande)
@@ -47,7 +48,7 @@ body:
       label: Rangée
       description: |
         Identifiant de la rangée de l'accueil, selon la destination :
-        nyc : landmarks, skyline, bridges, neighborhoods, hamptons · dc : monuments, baltimore, region · boston : boston, north-shore, cape-cod, inland · philadelphia : philadelphia, pennsylvania · losangeles : los-angeles, beaches, orange, san-diego · nevada : strip, downtown, south, north · florida : miami, gold-coast, keys, tampa-bay, southwest, panhandle, atlantic, wildlife · canada : quebec, ontario, british-columbia, prairies, atlantic · england : london, dorset, south-west, south-east, north, midlands, wales-north, wales-south, scotland, northern-ireland · ireland : dublin, dublin-port, atlantic · france : paris, riviera, mediterranean, corsica, brittany, atlantic, alps, lyon, pyrenees · poland : warsaw, krakow, tricity, wroclaw, baltic, masuria, tatras, beskids, sudetes, bieszczady, towns · norway : oslo, fjords, north, mountains · sweden : stockholm, coast, north · denmark : west-jutland · paradise-beaches : caribbean, abc, virgin-islands, mexico, keys, hawaii, maldives, indian-ocean, asia, brazil-atlantic · airports : atc, americas, europe, asia
+        nyc : landmarks, skyline, bridges, neighborhoods, hamptons · dc : monuments, baltimore, region · boston : boston, north-shore, cape-cod, inland · philadelphia : philadelphia, pennsylvania · losangeles : los-angeles, beaches, orange, san-diego · nevada : strip, downtown, south, north · florida : miami, gold-coast, keys, tampa-bay, southwest, panhandle, atlantic, wildlife · louisiana : new-orleans, region · canada : quebec, ontario, british-columbia, prairies, atlantic · england : london, dorset, south-west, south-east, north, midlands, wales-north, wales-south, scotland, northern-ireland · ireland : dublin, dublin-port, atlantic · france : paris, riviera, mediterranean, corsica, brittany, atlantic, alps, lyon, pyrenees · poland : warsaw, krakow, tricity, wroclaw, baltic, masuria, tatras, beskids, sudetes, bieszczady, towns · norway : oslo, fjords, north, mountains · sweden : stockholm, coast, north · denmark : west-jutland · paradise-beaches : caribbean, abc, virgin-islands, mexico, keys, hawaii, maldives, indian-ocean, asia, brazil-atlantic · airports : atc, americas, europe, asia
       placeholder: landmarks
     validations:
       required: true

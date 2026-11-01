@@ -31,6 +31,8 @@ DISCOVERY = {
     "nevada": (["Las Vegas live cam"], ["las vegas", "nevada", "fremont", "reno", "tahoe"]),
     "florida": (["Florida live cam"], ["florida", "miami", "key west", "keys", "lauderdale", "tampa", "clearwater",
                                        "destin", "panama city", "st. augustine", "naples", "sarasota"]),
+    "louisiana": (["New Orleans live cam"], ["new orleans", "louisiana", "bourbon", "french quarter", "baton rouge",
+                                              "lafayette", "shreveport", "lake charles"]),
     "england": (["UK live webcam"], ["london", "england", "uk", "beach", "harbour", "cornwall", "devon", "dorset",
                                          "scotland", "wales", "edinburgh", "pembrokeshire", "northern ireland"]),
     "ireland": (["Ireland live webcam"], ["ireland", "dublin", "galway", "cork", "kerry", "donegal", "wexford"]),

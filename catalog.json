@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-11-01T10:32:27Z",
+  "updatedAt": "2026-11-01T12:55:35Z",
   "places": [
     {
       "id": "nyc",
@@ -411,6 +411,30 @@
         {"id": "brevard-osprey-cam", "name": {"en": "Osprey nest, Brevard County", "fr": "Nid de balbuzards, comté de Brevard"}, "area": "Brevard County", "category": "wildlife", "type": "nature", "lat": 28.2, "lon": -80.65, "channel": {"name": "Florida Osprey Cam", "url": "https://www.youtube.com/channel/UCpbfXDA25pnLoye9uwXrnIQ"}, "match": ["Brevard Florida Osprey"], "videoId": "j2uNEQazAa4"},
         {"id": "florida-barn-owl-cam", "name": {"en": "Barn owl nest box", "fr": "Nichoir de chouettes effraies"}, "area": "Everglades Agricultural Area", "category": "wildlife", "type": "nature", "lat": 26.65, "lon": -80.65, "channel": {"name": "Charter Group Birdcams ציפורים אונליין קבוצת צ'רטר", "url": "https://www.youtube.com/channel/UCzbydNAcB7jeJGssRFb_dCA"}, "match": ["Barn Owl Florida Cam 1"], "videoId": "RbPzFQiZ-Sc"},
         {"id": "st-augustine-alligator-farm", "name": {"en": "St. Augustine Alligator Farm", "fr": "Ferme aux alligators de St. Augustine"}, "area": "St. Augustine", "category": "wildlife", "type": "nature", "lat": 29.881, "lon": -81.289, "channel": {"name": "Explore Manatee, River & Wetland Bird Cams", "url": "https://www.youtube.com/channel/UC7q505iPfTehVJUDYEm1jWw"}, "match": ["Alligators and Spoonbills"], "videoId": "qJr5KK6F7Q0"}
+      ]
+    },
+    {
+      "id": "louisiana",
+      "name": {"en": "Louisiana", "fr": "Louisiane"},
+      "country": "us",
+      "clockLabel": "NOLA",
+      "lat": 29.9511,
+      "lon": -90.0715,
+      "timezone": "America/Chicago",
+      "zoom": 6,
+      "categories": [
+        {"id": "new-orleans", "name": {"en": "New Orleans", "fr": "La Nouvelle-Orléans"}},
+        {"id": "region", "name": {"en": "Rest of Louisiana", "fr": "Reste de la Louisiane"}}
+      ],
+      "cameras": [
+        {"id": "ec-bourbonstreet", "name": {"en": "Bourbon Street"}, "area": "French Quarter", "category": "new-orleans", "type": "city", "lat": 29.9587, "lon": -90.0657, "source": "earthcam", "page": "https://www.earthcam.com/usa/louisiana/neworleans/bourbonstreet/?cam=bourbonstreet", "cam": "bourbonstreet", "channel": {"name": "EarthCam", "url": "https://www.earthcam.com/usa/louisiana/neworleans/bourbonstreet/?cam=bourbonstreet"}, "thumbnail": "https://static.earthcam.com/camshots/512x288/def4edd2cc7f31312e8fb2b132e30855.jpg"},
+        {"id": "ec-catsmeow2", "name": {"en": "Bourbon Street from the Cat's Meow balcony", "fr": "Bourbon Street depuis le balcon du Cat's Meow"}, "area": "French Quarter", "category": "new-orleans", "type": "city", "lat": 29.9587, "lon": -90.0656, "source": "earthcam", "page": "https://www.earthcam.com/usa/louisiana/neworleans/bourbonstreet/?cam=catsmeow2", "cam": "catsmeow2", "channel": {"name": "EarthCam", "url": "https://www.earthcam.com/usa/louisiana/neworleans/bourbonstreet/?cam=catsmeow2"}, "thumbnail": "https://static.earthcam.com/camshots/512x288/80385f09ca890b8b293596726cd71387.jpg"},
+        {"id": "ec-catsmeowkaraoke", "name": {"en": "Cat's Meow karaoke bar", "fr": "Bar karaoké Cat's Meow"}, "area": "French Quarter", "category": "new-orleans", "type": "city", "lat": 29.9588, "lon": -90.0657, "source": "earthcam", "page": "https://www.earthcam.com/usa/louisiana/neworleans/bourbonstreet/?cam=catsmeowkaraoke", "cam": "catsmeowkaraoke", "channel": {"name": "EarthCam", "url": "https://www.earthcam.com/usa/louisiana/neworleans/bourbonstreet/?cam=catsmeowkaraoke"}, "thumbnail": "https://static.earthcam.com/camshots/512x288/c4553d860a5c4336d24fa2ac466a354b.jpg"},
+        {"id": "ec-catsmeow", "name": {"en": "Cat's Meow stage", "fr": "Scène du Cat's Meow"}, "area": "French Quarter", "category": "new-orleans", "type": "city", "lat": 29.9588, "lon": -90.0657, "source": "earthcam", "page": "https://www.earthcam.com/usa/louisiana/neworleans/bourbonstreet/?cam=catsmeow", "cam": "catsmeow", "channel": {"name": "EarthCam", "url": "https://www.earthcam.com/usa/louisiana/neworleans/bourbonstreet/?cam=catsmeow"}, "thumbnail": "https://static.earthcam.com/camshots/512x288/41274bcc1f6ae06dc329c66953bde39d.jpg"},
+        {"id": "wwl-bourbon-street", "name": {"en": "Bourbon Street, WWL camera", "fr": "Bourbon Street, caméra de WWL"}, "area": "French Quarter", "category": "new-orleans", "type": "city", "lat": 29.959, "lon": -90.065, "channel": {"name": "WWLTV", "url": "https://www.youtube.com/channel/UCJCreS7pODbA6XYRsI5fdLg"}, "match": ["Bourbon Street live camera"], "videoId": "3zN5m2xt5do"},
+        {"id": "ec-bellechasse1", "name": {"en": "Belle Chasse Highway, west view", "fr": "Belle Chasse Highway, vue ouest"}, "area": "Belle Chasse", "category": "region", "type": "traffic", "lat": 29.86, "lon": -89.9928, "source": "earthcam", "page": "https://www.earthcam.com/usa/louisiana/bellechasse/?cam=bellechasse1", "cam": "bellechasse1", "channel": {"name": "EarthCam", "url": "https://www.earthcam.com/usa/louisiana/bellechasse/?cam=bellechasse1"}, "thumbnail": "https://static.earthcam.com/camshots/512x288/85842706946876c5640dbee252ac27e5.jpg"},
+        {"id": "ec-bellechasse2", "name": {"en": "Belle Chasse Highway, east view", "fr": "Belle Chasse Highway, vue est"}, "area": "Belle Chasse", "category": "region", "type": "traffic", "lat": 29.8602, "lon": -89.9933, "source": "earthcam", "page": "https://www.earthcam.com/usa/louisiana/bellechasse/?cam=bellechasse2", "cam": "bellechasse2", "channel": {"name": "EarthCam", "url": "https://www.earthcam.com/usa/louisiana/bellechasse/?cam=bellechasse2"}, "thumbnail": "https://static.earthcam.com/camshots/512x288/9e16b28d1fe621bdba317945657ec845.jpg"},
+        {"id": "shreveport-rail-bridge", "name": {"en": "Shreveport rail bridge", "fr": "Pont ferroviaire de Shreveport"}, "area": "Shreveport", "category": "region", "type": "rail", "lat": 32.515, "lon": -93.747, "channel": {"name": "SouthWest RailCams", "url": "https://www.youtube.com/channel/UCxaKME3e34j3aTESZZ3h7Sg"}, "match": ["Shreveport Terminal"], "videoId": "9C9UqvCLnxA"}
       ]
     },
     {
