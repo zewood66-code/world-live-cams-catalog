@@ -29,6 +29,8 @@ DISCOVERY = {
     "nyc": (["NYC live cam"], ["nyc", "new york city", "manhattan", "brooklyn", "queens", "bronx", "times square"]),
     "dc": (["Washington DC live cam"], ["washington", " dc", "d.c.", "potomac", "national mall"]),
     "nevada": (["Las Vegas live cam"], ["las vegas", "nevada", "fremont", "reno", "tahoe"]),
+    "florida": (["Florida live cam"], ["florida", "miami", "key west", "keys", "lauderdale", "tampa", "clearwater",
+                                       "destin", "panama city", "st. augustine", "naples", "sarasota"]),
     "england": (["UK live webcam"], ["london", "england", "uk", "beach", "harbour", "cornwall", "devon", "dorset",
                                          "scotland", "wales", "edinburgh", "pembrokeshire", "northern ireland"]),
     "ireland": (["Ireland live webcam"], ["ireland", "dublin", "galway", "cork", "kerry", "donegal", "wexford"]),
