@@ -1,4 +1,5 @@
-﻿# Met à jour chaque heure les videoId du catalogue servi à l'appli (voir tools/refresh_catalog.py).
+﻿# Met à jour chaque heure les videoId du catalogue servi à l'appli (voir tools/refresh_catalog.py)
+# et cherche les caméras EarthCam éphémères (voir tools/watch_earthcam.py).
 name: Refresh catalog
 
 on:
@@ -8,6 +9,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: refresh-catalog
@@ -33,14 +35,42 @@ jobs:
           fi
           python3 tools/refresh_catalog.py catalog.json $extra
 
+      # Lancé même si l'étape YouTube échoue (quota épuisé…) : elle n'utilise pas l'API.
+      - name: Watch EarthCam
+        if: ${{ !cancelled() }}
+        run: python3 tools/watch_earthcam.py catalog.json --notify "$RUNNER_TEMP/earthcam-notify.md"
+
       - name: Commit changes
+        id: commit
+        if: ${{ !cancelled() }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add catalog.json tools/candidates.md
+          git add catalog.json tools/candidates.md tools/earthcam.md
           if git diff --cached --quiet; then
             echo "Rien à publier."
           else
-            git commit -m "catalog: automatic refresh (video IDs, candidates)"
+            git commit -m "catalog: automatic refresh (video IDs, candidates, EarthCam)"
             git push
           fi
+
+      # Seulement après un push réussi : sinon tools/earthcam.md n'a pas changé sur GitHub
+      # et les mêmes lignes seront signalées à l'heure suivante.
+      - name: Notify new EarthCam cameras
+        if: ${{ !cancelled() && steps.commit.outcome == 'success' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          OWNER: ${{ github.repository_owner }}
+          REPO: ${{ github.repository }}
+        run: |
+          notify="$RUNNER_TEMP/earthcam-notify.md"
+          [ -f "$notify" ] || exit 0
+          { echo "@$OWNER"; echo; cat "$notify"; echo; echo "Détails : https://github.com/$REPO/blob/main/tools/earthcam.md"; } > "$RUNNER_TEMP/comment.md"
+          gh label create earthcam --color FBCA04 --description "Caméras EarthCam éphémères à vérifier" --force
+          number=$(gh issue list --label earthcam --state open --json number --jq '.[0].number')
+          if [ -z "$number" ]; then
+            url=$(gh issue create --title "Caméras EarthCam" --label earthcam \
+              --body "Le workflow horaire commente ici quand une caméra EarthCam apparaît ou qu'une caméra de la rangée \`events\` est coupée. Liste à jour : https://github.com/$REPO/blob/main/tools/earthcam.md")
+            number=${url##*/}
+          fi
+          gh issue comment "$number" --body-file "$RUNNER_TEMP/comment.md"

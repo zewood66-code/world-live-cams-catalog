@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-11-24T10:58:50Z",
+  "updatedAt": "2026-11-24T19:00:57Z",
   "places": [
     {
       "id": "nyc",
@@ -12,6 +12,7 @@
       "timezone": "America/New_York",
       "zoom": 13,
       "categories": [
+        {"id": "events", "name": {"en": "Holidays & events", "fr": "Fêtes et événements"}},
         {"id": "landmarks", "name": {"en": "Landmarks", "fr": "Monuments"}},
         {"id": "skyline", "name": {"en": "Skyline & harbor", "fr": "Skyline et port"}},
         {"id": "bridges", "name": {"en": "Bridges & rivers", "fr": "Ponts et rivières"}},
@@ -76,6 +77,7 @@
       "timezone": "America/New_York",
       "zoom": 13,
       "categories": [
+        {"id": "events", "name": {"en": "Holidays & events", "fr": "Fêtes et événements"}},
         {"id": "monuments", "name": {"en": "Monuments & National Mall", "fr": "Monuments et National Mall"}},
         {"id": "baltimore", "name": {"en": "Baltimore"}},
         {"id": "region", "name": {"en": "Maryland & Virginia", "fr": "Maryland et Virginie"}}
@@ -105,6 +107,7 @@
       "timezone": "America/New_York",
       "zoom": 9,
       "categories": [
+        {"id": "events", "name": {"en": "Holidays & events", "fr": "Fêtes et événements"}},
         {"id": "boston", "name": {"en": "Boston"}},
         {"id": "north-shore", "name": {"en": "North Shore", "fr": "Côte nord"}},
         {"id": "cape-cod", "name": {"en": "Cape Cod & islands", "fr": "Cap Cod et îles"}},
@@ -148,6 +151,7 @@
       "timezone": "America/New_York",
       "zoom": 8,
       "categories": [
+        {"id": "events", "name": {"en": "Holidays & events", "fr": "Fêtes et événements"}},
         {"id": "philadelphia", "name": {"en": "Philadelphia", "fr": "Philadelphie"}},
         {"id": "pennsylvania", "name": {"en": "Pennsylvania", "fr": "Pennsylvanie"}}
       ],
@@ -177,6 +181,7 @@
       "timezone": "America/Los_Angeles",
       "zoom": 9,
       "categories": [
+        {"id": "events", "name": {"en": "Holidays & events", "fr": "Fêtes et événements"}},
         {"id": "los-angeles", "name": {"en": "Los Angeles"}},
         {"id": "beaches", "name": {"en": "Beach cities", "fr": "Plages"}},
         {"id": "orange", "name": {"en": "Orange County & inland", "fr": "Orange County et arrière-pays"}},
@@ -219,6 +224,7 @@
       "timezone": "America/Los_Angeles",
       "zoom": 7,
       "categories": [
+        {"id": "events", "name": {"en": "Holidays & events", "fr": "Fêtes et événements"}},
         {"id": "strip", "name": {"en": "Las Vegas Strip"}},
         {"id": "downtown", "name": {"en": "Downtown & Fremont Street", "fr": "Downtown et Fremont Street"}},
         {"id": "south", "name": {"en": "Southern Nevada", "fr": "Sud du Nevada"}},
@@ -261,6 +267,7 @@
       "timezone": "America/New_York",
       "zoom": 6,
       "categories": [
+        {"id": "events", "name": {"en": "Holidays & events", "fr": "Fêtes et événements"}},
         {"id": "miami", "name": {"en": "Miami & Miami Beach", "fr": "Miami et Miami Beach"}},
         {"id": "gold-coast", "name": {"en": "Fort Lauderdale & Palm Beach", "fr": "Fort Lauderdale et Palm Beach"}},
         {"id": "keys", "name": {"en": "Florida Keys", "fr": "Keys de Floride"}},
@@ -423,6 +430,7 @@
       "timezone": "America/Chicago",
       "zoom": 6,
       "categories": [
+        {"id": "events", "name": {"en": "Holidays & events", "fr": "Fêtes et événements"}},
         {"id": "new-orleans", "name": {"en": "New Orleans", "fr": "La Nouvelle-Orléans"}},
         {"id": "region", "name": {"en": "Rest of Louisiana", "fr": "Reste de la Louisiane"}}
       ],
@@ -447,6 +455,7 @@
       "timezone": "America/Toronto",
       "zoom": 5,
       "categories": [
+        {"id": "events", "name": {"en": "Holidays & events", "fr": "Fêtes et événements"}},
         {"id": "quebec", "name": {"en": "Quebec", "fr": "Québec"}},
         {"id": "ontario", "name": {"en": "Ontario"}},
         {"id": "british-columbia", "name": {"en": "British Columbia", "fr": "Colombie-Britannique"}},
@@ -510,6 +519,7 @@
       "timezone": "Europe/London",
       "zoom": 5,
       "categories": [
+        {"id": "events", "name": {"en": "Holidays & events", "fr": "Fêtes et événements"}},
         {"id": "london", "name": {"en": "London", "fr": "Londres"}},
         {"id": "dorset", "name": {"en": "Dorset & Jurassic Coast", "fr": "Dorset et côte jurassique"}},
         {"id": "south-west", "name": {"en": "Cornwall, Devon & Somerset", "fr": "Cornouailles, Devon et Somerset"}},
@@ -613,6 +623,7 @@
       "timezone": "Europe/Dublin",
       "zoom": 7,
       "categories": [
+        {"id": "events", "name": {"en": "Holidays & events", "fr": "Fêtes et événements"}},
         {"id": "dublin", "name": {"en": "Dublin"}},
         {"id": "dublin-port", "name": {"en": "Dublin Port & Bay", "fr": "Port et baie de Dublin"}},
         {"id": "atlantic", "name": {"en": "Wild Atlantic Way", "fr": "Côte atlantique"}}
@@ -640,6 +651,7 @@
       "timezone": "Europe/Paris",
       "zoom": 6,
       "categories": [
+        {"id": "events", "name": {"en": "Holidays & events", "fr": "Fêtes et événements"}},
         {"id": "paris", "name": {"en": "Paris"}},
         {"id": "riviera", "name": {"en": "French Riviera", "fr": "Côte d'Azur"}},
         {"id": "mediterranean", "name": {"en": "Mediterranean coast", "fr": "Méditerranée"}},
@@ -724,6 +736,7 @@
       "timezone": "Europe/Warsaw",
       "zoom": 6,
       "categories": [
+        {"id": "events", "name": {"en": "Holidays & events", "fr": "Fêtes et événements"}},
         {"id": "warsaw", "name": {"en": "Warsaw", "fr": "Varsovie"}},
         {"id": "krakow", "name": {"en": "Kraków", "fr": "Cracovie"}},
         {"id": "tricity", "name": {"en": "Gdańsk, Gdynia & Sopot", "fr": "Gdańsk, Gdynia et Sopot"}},
@@ -1152,6 +1165,7 @@
       "timezone": "Europe/Oslo",
       "zoom": 5,
       "categories": [
+        {"id": "events", "name": {"en": "Holidays & events", "fr": "Fêtes et événements"}},
         {"id": "oslo", "name": {"en": "Oslo"}},
         {"id": "fjords", "name": {"en": "Fjords & west coast", "fr": "Fjords et côte ouest"}},
         {"id": "north", "name": {"en": "Northern Norway", "fr": "Nord de la Norvège"}},
@@ -1217,6 +1231,7 @@
       "timezone": "Europe/Stockholm",
       "zoom": 5,
       "categories": [
+        {"id": "events", "name": {"en": "Holidays & events", "fr": "Fêtes et événements"}},
         {"id": "stockholm", "name": {"en": "Stockholm"}},
         {"id": "coast", "name": {"en": "West & south coasts", "fr": "Côtes ouest et sud"}},
         {"id": "north", "name": {"en": "Dalarna, mountains & Lapland", "fr": "Dalécarlie, montagnes et Laponie"}}
@@ -1252,6 +1267,7 @@
       "timezone": "Europe/Copenhagen",
       "zoom": 9,
       "categories": [
+        {"id": "events", "name": {"en": "Holidays & events", "fr": "Fêtes et événements"}},
         {"id": "west-jutland", "name": {"en": "West Jutland coast", "fr": "Côte ouest du Jutland"}}
       ],
       "cameras": [
