@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-11-24T19:12:47Z",
+  "updatedAt": "2026-11-24T21:15:13Z",
   "places": [
     {
       "id": "nyc",
@@ -31,7 +31,7 @@
         {"id": "romnyc-forest-hills", "name": {"en": "Skyline from Forest Hills", "fr": "Skyline depuis Forest Hills"}, "area": "Queens", "category": "skyline", "type": "skyline", "lat": 40.7185, "lon": -73.8448, "channel": {"name": "RomNYC", "url": "https://www.youtube.com/@RomNYC"}, "match": ["Forest Hills"], "videoId": "NzKkbwMHLK0"},
         {"id": "earthcam-brooklyn-bridge", "name": {"en": "Brooklyn Bridge", "fr": "Pont de Brooklyn"}, "area": "East River", "category": "bridges", "type": "landmark", "lat": 40.7061, "lon": -73.9969, "channel": {"name": "EarthCam", "url": "https://www.youtube.com/@earthcam"}, "match": ["Brooklyn Bridge Cam"], "videoId": "tErYxn2UM5Y"},
         {"id": "gwb-george-washington-bridge", "name": {"en": "George Washington Bridge", "fr": "Pont George-Washington"}, "area": "Washington Heights", "category": "bridges", "type": "traffic", "lat": 40.8517, "lon": -73.9527, "channel": {"name": "GWB Live Traffic Cam", "url": "https://www.youtube.com/@gwblivetrafficcam"}, "match": ["George Washington Bridge", "GWB"], "videoId": "U6cAPDl-ZBM"},
-        {"id": "nycferry-east-34th", "name": {"en": "East River at 34th Street", "fr": "East River, 34e Rue"}, "area": "Midtown East", "category": "bridges", "type": "port", "lat": 40.7445, "lon": -73.9718, "channel": {"name": "NYC Ferry", "url": "https://www.youtube.com/@nycferry"}, "match": ["East 34th"], "videoId": "7XHLftBTDcc"},
+        {"id": "nycferry-east-34th", "name": {"en": "East River at 34th Street", "fr": "East River, 34e Rue"}, "area": "Midtown East", "category": "bridges", "type": "port", "lat": 40.7445, "lon": -73.9718, "channel": {"name": "NYC Ferry", "url": "https://www.youtube.com/@nycferry"}, "match": ["East 34th"], "videoId": "rCQ92f3Re2I"},
         {"id": "earthcam-coney-island", "name": {"en": "Coney Island", "fr": "Coney Island"}, "area": "Brooklyn", "category": "neighborhoods", "type": "beach", "lat": 40.5749, "lon": -73.9859, "channel": {"name": "EarthCam", "url": "https://www.youtube.com/@earthcam"}, "match": ["Coney Island"], "videoId": "H67j7H-7QD0"},
         {"id": "ppl-prospect-park", "name": {"en": "Prospect Park", "fr": "Prospect Park"}, "area": "Park Slope, Brooklyn", "category": "neighborhoods", "type": "nature", "lat": 40.6602, "lon": -73.969, "channel": {"name": "Prospect Park Live", "url": "https://www.youtube.com/@ProspectParkLive"}, "match": ["Prospect Park"], "videoId": "8vNK813vM1w"},
         {"id": "tripwebcam-upper-east-side", "name": {"en": "Upper East Side", "fr": "Upper East Side"}, "area": "Manhattan", "category": "neighborhoods", "type": "city", "lat": 40.7736, "lon": -73.9566, "channel": {"name": "Tripwebcam", "url": "https://www.youtube.com/@tripwebcam"}, "match": ["Upper East Side"], "videoId": "R2jNOtYEwdI"},
