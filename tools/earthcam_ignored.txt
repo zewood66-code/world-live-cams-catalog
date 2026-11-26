@@ -64,3 +64,4 @@ https://www.earthcam.com/usa/florida/coralsprings/           # florida : Coral S
 nasa_iss                                                     # florida : Planet Earth Cam (Orlando, FL)
 https://myearthcam.com/tomfournier                           # canada : Kingston Peninsula Princess Ferry (Saint John)
 http://www.abbeyroad.com/Crossing                            # england : Abbey Road Crossing Cam (London)
+https://www.earthcam.com/usa/newjersey/weehawken/  # nyc : Lincoln Harbor Cam (Weehawken, NJ), déjà au catalogue en direct YouTube
