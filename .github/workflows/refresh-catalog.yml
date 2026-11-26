@@ -1,5 +1,5 @@
 ﻿# Met à jour chaque heure les videoId du catalogue servi à l'appli (voir tools/refresh_catalog.py)
-# et cherche les caméras EarthCam éphémères (voir tools/watch_earthcam.py).
+# et ajoute ou retire les caméras EarthCam éphémères (voir tools/watch_earthcam.py).
 name: Refresh catalog
 
 on:

@@ -1,19 +1,23 @@
 #!/usr/bin/env python3
-"""Repère les caméras EarthCam éphémères (fêtes, parades, Nouvel An…) : lancé chaque heure par GitHub Actions.
+"""Ajoute et retire les caméras EarthCam éphémères (fêtes, parades, Nouvel An…) : lancé par GitHub Actions.
 
 EarthCam allume pour quelques jours des caméras d'événement, soit sur une page existante (Times Square),
-soit sur une nouvelle page. Le script lit :
+soit sur une nouvelle page (/events/thanksgiving/2026/). Le script lit :
   - le répertoire EarthCam des États et pays couverts par le catalogue ;
   - le `json_base` de chaque page EarthCam du catalogue (il décrit toutes les caméras de la page,
     allumées ou non) et des pages de WATCHED_PAGES.
-Il écrit dans tools/earthcam.md :
-  - les caméras en ligne absentes du catalogue et de tools/earthcam_ignored.txt ;
-  - les caméras de la rangée `events` du catalogue coupées ou retirées de leur page, à enlever.
-Le fichier ne porte pas d'heure : il ne change (et n'est publié) que quand ces listes changent.
-Avec --notify, les lignes absentes de la version précédente sont écrites dans un fichier, que le
-workflow poste en commentaire sur l'issue « Caméras EarthCam ».
+Une caméra allumée, absente du catalogue et de tools/earthcam_ignored.txt :
+  - est ajoutée à la rangée `events` de sa destination si elle a l'air d'une caméra d'événement
+    (page déjà lue, adresse en /events/ ou mot de EVENT_WORDS dans son titre) et qu'elle a un flux ;
+  - sinon, elle est seulement signalée dans tools/earthcam.md.
+Une caméra EarthCam de la rangée `events` coupée ou retirée de sa page est signalée, puis retirée
+du catalogue si elle l'est encore au passage suivant (une panne passagère ne la fait pas disparaître).
 
-Une source en erreur garde les lignes qu'elle avait données, pour ne pas renotifier à son retour.
+tools/earthcam.md ne porte pas d'heure : il ne change que quand ses listes changent. C'est aussi la
+mémoire du script (caméras déjà signalées, caméras déjà vues coupées). Une source en erreur garde les
+lignes qu'elle avait données, pour ne pas renotifier à son retour.
+Avec --notify, les ajouts, retraits et nouvelles lignes sont écrits dans un fichier, que le workflow
+poste en commentaire sur l'issue « Caméras EarthCam ».
 """
 
 import argparse
@@ -23,6 +27,9 @@ import sys
 import time
 import urllib.parse
 import urllib.request
+from datetime import datetime, timezone
+
+from add_camera import insert_camera
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Safari/537.36"
 DIRECTORY_API = "https://www.earthcam.com/api/dotcom/network_search.php?r=ecn&a=fetch&"
@@ -39,6 +46,10 @@ DIRECTORY = [
 WATCHED_PAGES = {
     "https://www.earthcam.com/usa/newyork/rockefellercenter/": "nyc",
 }
+# Une caméra du répertoire est une caméra d'événement si son adresse contient /events/ ou son titre un de ces mots.
+EVENT_WORDS = ["parade", "christmas", "xmas", "holiday", "tree lighting", "thanksgiving", "halloween", "new year",
+               "nye", "countdown", "ball drop", "fireworks", "festival", "celebration", "mardi gras", "carnival",
+               "marathon", "st. patrick", "fourth of july", "4th of july", "independence day", "eclipse", "launch"]
 EVENTS_ROW = "events"
 NEW_HEADING = "## Nouvelles caméras en ligne"
 ENDED_HEADING = "## Caméras d'événement coupées"
@@ -82,6 +93,10 @@ def json_base(page_html):
     return None
 
 
+def is_online(details):
+    return str(details.get("cam_state")) == "1"
+
+
 def load_ignored(path):
     try:
         with open(path, encoding="utf-8") as f:
@@ -113,8 +128,7 @@ def clean(text):
 
 
 def scan(catalog):
-    """Retourne (caméras vues, caméras d'événement coupées, sources en erreur)."""
-    place_order = [p["id"] for p in catalog["places"]]
+    """Retourne (caméras vues, json_base des pages lues, sources en erreur)."""
     # page -> (adresse lue, destination). L'adresse garde le ?cam= d'une caméra du catalogue : sans lui,
     # certaines pages (Statue of Liberty) chargent leurs caméras plus tard et leur json_base reste vide.
     pages = {}
@@ -125,7 +139,7 @@ def scan(catalog):
     for page, place_id in WATCHED_PAGES.items():
         pages.setdefault(page, (page, place_id))
 
-    seen = {}  # clé -> {title, city, url, place, online, source}
+    seen = {}  # clé -> {title, city, url, place, online, source, page, cam, details}
     page_cams = {}  # page lue -> {cam: description}
     failed = set()
 
@@ -144,8 +158,11 @@ def scan(catalog):
                 "city": ", ".join(x for x in (cam.get("city"), cam.get("state")) if x),
                 "url": f"{page}?cam={key}",
                 "place": place_id,
-                "online": str(cam.get("cam_state")) == "1",
+                "online": is_online(cam),
                 "source": source,
+                "page": page,
+                "cam": key,
+                "details": cam,
             })
 
     print(f"Répertoire EarthCam ({len(DIRECTORY)} régions) :")
@@ -173,43 +190,115 @@ def scan(catalog):
                 "place": place_id,
                 "online": str(item.get("cam_state")) == "1",
                 "source": source,
+                "page": page_of(url),
+                "cam": cam,
+                "details": None,
             })
-
-    ended = []  # (destination, id, titre, raison, source)
-    for place in catalog["places"]:
-        for camera in place["cameras"]:
-            if camera.get("category") != EVENTS_ROW or camera.get("source") != "earthcam":
-                continue
-            page = page_of(camera["page"])
-            source = page.replace("https://www.earthcam.com", "")
-            if page not in page_cams:
-                continue  # page en erreur : les lignes précédentes sont reprises
-            cam = page_cams[page].get(camera.get("cam"))
-            if cam is None:
-                ended.append((place["id"], camera["id"], camera["name"]["en"], "absente de sa page", source))
-            elif str(cam.get("cam_state")) != "1":
-                ended.append((place["id"], camera["id"], camera["name"]["en"], "hors ligne", source))
-    ended.sort(key=lambda e: (place_order.index(e[0]), e[1]))
-    return seen, ended, failed, place_order
+    return seen, page_cams, failed
 
 
-def build(catalog, ignored, previous):
-    """Retourne (texte du fichier, lignes nouvelles depuis la version précédente)."""
-    seen, ended, failed, place_order = scan(catalog)
+def looks_like_event(cam):
+    """Caméra lue sur une page suivie (allumée après coup), ou caméra du répertoire au titre d'événement."""
+    if cam["details"] is not None:
+        return True
+    title = cam["title"].lower()
+    return "/events/" in cam["url"] or any(word in title for word in EVENT_WORDS)
+
+
+def event_camera(cam, catalog):
+    """Ligne de catalogue pour la caméra, ou (None, raison) si elle ne peut pas être ajoutée."""
+    if not cam["url"].startswith("https://www.earthcam.com/"):
+        return None, "lecteur hors earthcam.com"
+    details, key = cam["details"], cam["cam"]
+    if details is None:  # caméra du répertoire : on lit sa page
+        text = fetch(cam["url"], "https://www.earthcam.com/")
+        cams = json_base(text) if text else None
+        if not cams:
+            return None, "page illisible"
+        if key is None:
+            default = re.search(r"js_defaultCam\s*=\s*'([^']+)'", text)
+            key = default.group(1) if default and default.group(1) in cams else next(iter(cams)) if len(cams) == 1 else None
+        details = cams.get(key)
+        if details is None:
+            return None, "caméra absente de sa page"
+    if not is_online(details) or ".m3u8" not in (details.get("html5_streampath") or ""):
+        return None, "pas de flux"
+    try:
+        lat, lon = round(float(details["map_lat"]), 5), round(float(details["map_long"]), 5)
+    except (KeyError, TypeError, ValueError):
+        return None, "pas de coordonnées"
+    camera_id = "ec-" + key
+    if any(c["id"] == camera_id for p in catalog["places"] for c in p["cameras"]):
+        return None, f"identifiant {camera_id} déjà pris"
+    page = f"{cam['page']}?cam={key}"
+    camera = {"id": camera_id, "name": {"en": clean(details.get("title") or cam["title"])},
+              "area": details.get("city") or cam["city"] or "", "category": EVENTS_ROW, "type": "city",
+              "lat": lat, "lon": lon, "source": "earthcam", "page": page, "cam": key,
+              "channel": {"name": "EarthCam", "url": page},
+              "thumbnail": (details.get("thumbimage") or "").replace("/256x144/", "/512x288/")}
+    return camera, None
+
+
+def remove_camera(text, camera_id):
+    """Retire la ligne de la caméra, en gardant les virgules du tableau justes."""
+    lines = text.split("\n")
+    index = next(i for i, line in enumerate(lines) if line.startswith(f'        {{"id": "{camera_id}",'))
+    if not lines[index].endswith(","):  # dernière caméra de sa destination
+        lines[index - 1] = lines[index - 1].removesuffix(",")
+    del lines[index]
+    now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    return re.sub(r'"updatedAt": "[^"]*"', f'"updatedAt": "{now}"', "\n".join(lines), count=1)
+
+
+def run(catalog, text, ignored, previous):
+    """Retourne (catalogue modifié, rapport, notification)."""
+    seen, page_cams, failed = scan(catalog)
+    place_order = [p["id"] for p in catalog["places"]]
+    place_rank = lambda place_id: place_order.index(place_id) if place_id in place_order else len(place_order)
     # Identifiants EarthCam et pages (share.earthcam.net…) du catalogue.
     cameras = [c for place in catalog["places"] for c in place["cameras"]]
     in_catalog = {c["cam"] for c in cameras if c.get("cam")} | {page_of(c["page"]) for c in cameras if c.get("page")}
 
-    new_lines = {}
-    for key, cam in seen.items():
+    added, new_lines = [], {}
+    for key, cam in sorted(seen.items(), key=lambda kv: (place_rank(kv[1]["place"]), kv[1]["title"].lower())):
         if not cam["online"] or key in in_catalog or key in ignored:
             continue
+        reason = None
+        if looks_like_event(cam):
+            camera, reason = event_camera(cam, catalog)
+            if camera is not None:
+                text = insert_camera(text, cam["place"], camera)
+                catalog["places"][place_order.index(cam["place"])]["cameras"].append(camera)
+                added.append(f"- **{cam['place']}** : [{camera['name']['en']}]({camera['page']}) "
+                             f"(`{camera['id']}`, {camera['area']})")
+                continue
         line = (f"- **{cam['place']}** : [{clean(cam['title'])}]({cam['url']})"
-                + (f" ({clean(cam['city'])})" if cam["city"] else "") + f" <!-- {key} | {cam['source']} -->")
-        new_lines[key] = (place_order.index(cam["place"]), clean(cam["title"]).lower(), line)
-    ended_lines = {camera_id: (place_order.index(place_id), camera_id,
-                               f"- **{place_id}** : `{camera_id}` {clean(title)} ({reason}) <!-- {camera_id} | {source} -->")
-                   for place_id, camera_id, title, reason, source in ended}
+                + (f" ({clean(cam['city'])})" if cam["city"] else "")
+                + (f", non ajoutée : {reason}" if reason else "") + f" <!-- {key} | {cam['source']} -->")
+        new_lines[key] = (place_rank(cam["place"]), clean(cam["title"]).lower(), line)
+
+    # Caméras d'événement coupées : retirées si elles l'étaient déjà au passage précédent.
+    removed, ended_lines = [], {}
+    for place in catalog["places"]:
+        for camera in list(place["cameras"]):
+            if camera.get("category") != EVENTS_ROW or camera.get("source") != "earthcam":
+                continue
+            page = page_of(camera["page"])
+            if page not in page_cams:
+                continue  # page en erreur : la ligne précédente est reprise plus bas
+            details = page_cams[page].get(camera.get("cam"))
+            if details is not None and is_online(details):
+                continue
+            reason = "absente de sa page" if details is None else "hors ligne"
+            if (ENDED_HEADING, camera["id"]) in previous:
+                text = remove_camera(text, camera["id"])
+                place["cameras"].remove(camera)
+                removed.append(f"- **{place['id']}** : `{camera['id']}` {camera['name']['en']} ({reason})")
+                continue
+            ended_lines[camera["id"]] = (
+                place_rank(place["id"]), camera["id"],
+                f"- **{place['id']}** : `{camera['id']}` {clean(camera['name']['en'])} ({reason}, retirée au "
+                f"prochain passage si elle l'est encore) <!-- {camera['id']} | {page.replace('https://www.earthcam.com', '')} -->")
 
     # Une source en erreur garde ses lignes précédentes.
     for (section, key), (source, line) in previous.items():
@@ -223,29 +312,38 @@ def build(catalog, ignored, previous):
         body = [line for *_, line in sorted(lines.values())] or ["Aucune."]
         return ["", heading, "", intro, "", *body]
 
-    lines = [
+    report = "\n".join([
         "# Caméras EarthCam à vérifier",
         "",
-        "Écrit chaque heure par `tools/watch_earthcam.py` à partir du répertoire EarthCam et des pages EarthCam",
-        "du catalogue. Chaque nouvelle ligne est signalée en commentaire sur l'issue « Caméras EarthCam ».",
+        "Écrit par `tools/watch_earthcam.py` (workflow horaire) à partir du répertoire EarthCam et des pages",
+        "EarthCam du catalogue. Les caméras d'événement sont ajoutées à la rangée `events` et retirées toutes",
+        "seules ; ajouts, retraits et nouvelles lignes sont signalés sur l'issue « Caméras EarthCam ».",
         *section(NEW_HEADING,
-                 "Caméras allumées, absentes du catalogue et de `tools/earthcam_ignored.txt` : souvent des caméras "
-                 "d'événement (fêtes, parades…). À ajouter dans la rangée `events` de leur destination avec le "
-                 "formulaire « Ajouter une caméra », ou à écarter en ajoutant leur identifiant (le texte entre "
-                 "`<!--` et `|`) à `tools/earthcam_ignored.txt`.",
+                 "Caméras allumées, absentes du catalogue et de `tools/earthcam_ignored.txt`, que le script n'a pas "
+                 "ajoutées (pas l'air d'un événement, ou pas de flux ni de coordonnées). À ajouter à la main avec le "
+                 "formulaire « Ajouter une caméra », ou à écarter en mettant leur identifiant (le texte entre `<!--` "
+                 "et `|`) dans `tools/earthcam_ignored.txt`.",
                  new_lines),
         *section(ENDED_HEADING,
-                 "Caméras de la rangée `events` hors ligne ou retirées de leur page EarthCam : à enlever du catalogue "
-                 "une fois l'événement passé.",
+                 "Caméras EarthCam de la rangée `events` hors ligne ou retirées de leur page.",
                  ended_lines),
-    ]
+    ]) + "\n"
     if failed:
         print("Sources en erreur (lignes précédentes reprises) : " + ", ".join(sorted(failed)))
 
     old_lines = {line for _, line in previous.values()}
     fresh = [line for *_, line in sorted(new_lines.values()) if line not in old_lines]
-    fresh_ended = [line for *_, line in sorted(ended_lines.values()) if line not in old_lines]
-    return "\n".join(lines) + "\n", fresh, fresh_ended
+    notify = []
+    if added:
+        notify += ["Caméras d'événement ajoutées à la rangée « Fêtes et événements » :", "", *added, "",
+                   "Pour en écarter une : retire-la du catalogue et mets son identifiant EarthCam (sans `ec-`) "
+                   "dans `tools/earthcam_ignored.txt`, sinon elle sera rajoutée.", ""]
+    if removed:
+        notify += ["Caméras d'événement coupées, retirées du catalogue :", "", *removed, ""]
+    if fresh:
+        notify += ["Nouvelles caméras EarthCam, non ajoutées :", "", *fresh, ""]
+    print(f"{len(added)} ajoutée(s), {len(removed)} retirée(s), {len(fresh)} nouvelle(s) signalée(s).")
+    return text, report, "\n".join(notify)
 
 
 def main():
@@ -253,25 +351,21 @@ def main():
     parser.add_argument("catalog")
     parser.add_argument("--out", default="tools/earthcam.md")
     parser.add_argument("--ignored", default="tools/earthcam_ignored.txt")
-    parser.add_argument("--notify", metavar="FICHIER", help="écrit ici les lignes nouvelles, s'il y en a")
+    parser.add_argument("--notify", metavar="FICHIER", help="écrit ici les ajouts, retraits et nouvelles lignes")
     args = parser.parse_args()
 
     with open(args.catalog, encoding="utf-8") as f:
-        catalog = json.load(f)
-    previous = load_previous(args.out)
-    text, fresh, fresh_ended = build(catalog, load_ignored(args.ignored), previous)
+        original = f.read()
+    text, report, notify = run(json.loads(original), original, load_ignored(args.ignored), load_previous(args.out))
+    if text != original:
+        json.loads(text)  # garde-fou : le fichier doit rester du JSON valide
+        with open(args.catalog, "w", encoding="utf-8", newline="\n") as f:
+            f.write(text)
     with open(args.out, "w", encoding="utf-8", newline="\n") as f:
-        f.write(text)
-    print(f"{len(fresh)} nouvelle(s) caméra(s), {len(fresh_ended)} caméra(s) d'événement coupée(s) depuis la dernière fois.")
-
-    if args.notify and (fresh or fresh_ended):
-        parts = []
-        if fresh:
-            parts += ["Nouvelles caméras EarthCam en ligne :", "", *fresh, ""]
-        if fresh_ended:
-            parts += ["Caméras d'événement coupées, à retirer du catalogue :", "", *fresh_ended, ""]
+        f.write(report)
+    if args.notify and notify:
         with open(args.notify, "w", encoding="utf-8", newline="\n") as f:
-            f.write("\n".join(parts) + "\n")
+            f.write(notify + "\n")
 
 
 if __name__ == "__main__":
